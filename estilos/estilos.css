@@ -155,8 +155,8 @@ h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.04;letter-spacing:
 .prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:18px}
 .prod-card{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#101317,#0b0d10);overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
 .prod-card:hover{transform:translateY(-6px);border-color:rgba(124,255,79,.4);box-shadow:0 26px 50px rgba(0,0,0,.55)}
-.prod-media{position:relative;background:linear-gradient(180deg,#f6f7f9,#e9ebef);padding:22px;aspect-ratio:1;display:flex;align-items:center;justify-content:center}
-.prod-media img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 12px 18px rgba(0,0,0,.18))}
+.prod-media{position:relative;background:linear-gradient(180deg,#f6f7f9,#e9ebef);aspect-ratio:1;overflow:hidden}
+.prod-media img{position:absolute;inset:0;width:100%;height:100%;padding:22px;object-fit:contain;object-position:center;filter:drop-shadow(0 12px 18px rgba(0,0,0,.18))}
 .badge{position:absolute;top:12px;left:12px;background:#08090B;color:var(--green);font-family:var(--display);font-weight:700;font-size:10px;letter-spacing:.1em;padding:5px 9px;border-radius:7px}
 .disc{position:absolute;top:12px;right:12px;background:var(--violet);color:#fff;font-family:var(--display);font-weight:700;font-size:11px;padding:5px 9px;border-radius:7px}
 .prod-body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1}
