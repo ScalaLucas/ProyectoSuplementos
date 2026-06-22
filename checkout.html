@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — Mutants Suplementos</title>
+<link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+<body data-page="checkout">
+
+<div class="announce"><div class="announce-track">
+  <span>★ Envío gratis desde $60.000</span><span>★ 3 y 6 cuotas sin interés</span><span>★ Productos 100% originales</span><span>★ 10% OFF transferencia / efectivo</span><span>★ Despacho en 24-48hs</span><span>★ +8 marcas líderes</span><span>★ Compra 100% segura</span>
+  <span>★ Envío gratis desde $60.000</span><span>★ 3 y 6 cuotas sin interés</span><span>★ Productos 100% originales</span><span>★ 10% OFF transferencia / efectivo</span><span>★ Despacho en 24-48hs</span><span>★ +8 marcas líderes</span><span>★ Compra 100% segura</span>
+</div></div>
+
+<nav class="nav">
+  <div style="display:flex;align-items:center;gap:18px">
+    <a href="index.html" class="brand"><span class="diamond"></span><span style="display:flex;flex-direction:column;line-height:1"><span class="name">MUTANTS</span><span class="sub">SUPLEMENTOS</span></span></a>
+  </div>
+  <div style="display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted2)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Pago seguro encriptado</div>
+  <div class="nav-right">
+    <a href="carrito.html" class="cart-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="18" cy="20" r="1.4"></circle></svg><span>Carrito</span><span class="cart-badge" data-cart-count>0</span></a>
+  </div>
+</nav>
+
+<main class="container" id="checkout-page">
+
+  <!-- SUCCESS STATE -->
+  <div id="checkout-done" style="display:none;text-align:center;padding:clamp(60px,10vw,120px) 0">
+    <div style="width:80px;height:80px;border-radius:50%;background:rgba(124,255,79,.12);border:1px solid rgba(124,255,79,.4);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:var(--green)"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"></path></svg></div>
+    <h1 style="font-size:clamp(28px,4vw,42px);margin-bottom:14px">¡Gracias por tu compra!</h1>
+    <p style="color:var(--muted);font-size:16px;max-width:480px;margin:0 auto 8px">Recibimos tu pedido. Te enviamos un email con el detalle y te contactamos por WhatsApp para coordinar el envío.</p>
+    <p class="muted" style="font-size:14px;margin-bottom:30px">N° de orden: <span class="green" style="font-weight:600" id="order-no">#MUT-2026-0148</span></p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a id="wa-order" href="#" target="_blank" class="btn" style="background:#25D366;color:#fff"><svg width="19" height="19" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15c-1.36 0-2.7-.37-3.87-1.06l-.28-.16-2.88.75.77-2.8-.18-.29a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.43-8.24 8.43z"></path></svg>Enviar pedido por WhatsApp</a>
+      <a href="index.html" class="btn btn-ghost">Volver al inicio</a>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div id="checkout-main">
+    <div class="crumb"><a href="carrito.html">Carrito</a><i>/</i><span style="color:#cfd3da">Checkout</span></div>
+    <div class="step-dots" style="margin-top:18px">
+      <div class="step-dot active"><span class="num">1</span>Carrito</div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2"><path d="M9 6l6 6-6 6"></path></svg>
+      <div class="step-dot active"><span class="num">2</span>Datos y envío</div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2"><path d="M9 6l6 6-6 6"></path></svg>
+      <div class="step-dot"><span class="num">3</span>Confirmación</div>
+    </div>
+
+    <form class="checkout-grid" id="checkout-form" style="padding-top:10px">
+      <div>
+        <div class="panel" style="margin-bottom:20px">
+          <h3>Datos de contacto</h3>
+          <div class="field-row"><div class="field"><label>Nombre</label><input required placeholder="Juan"></div><div class="field"><label>Apellido</label><input required placeholder="Pérez"></div></div>
+          <div class="field-row"><div class="field"><label>Email</label><input type="email" required placeholder="juan@email.com"></div><div class="field"><label>Teléfono / WhatsApp</label><input required placeholder="11 1234-5678"></div></div>
+        </div>
+        <div class="panel" style="margin-bottom:20px">
+          <h3>Dirección de envío</h3>
+          <div class="field"><label>Calle y número</label><input required placeholder="Av. Siempreviva 742"></div>
+          <div class="field-row"><div class="field"><label>Ciudad</label><input required placeholder="Buenos Aires"></div><div class="field"><label>Código postal</label><input required placeholder="1414"></div></div>
+          <div class="field-row"><div class="field"><label>Provincia</label>
+            <select required><option value="">Seleccionar…</option><option>Buenos Aires</option><option>CABA</option><option>Córdoba</option><option>Santa Fe</option><option>Mendoza</option><option>Otra</option></select></div>
+            <div class="field"><label>Método de envío</label>
+            <select required><option>Estándar (24–48hs)</option><option>Express (24hs)</option><option>Retiro en local</option></select></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Método de pago</h3>
+          <div class="pay-methods">
+            <label class="pay-opt active"><input type="radio" name="pay" checked> <span style="flex:1"><b style="font-family:var(--display);font-size:14px;display:block">Tarjeta de crédito/débito</b><span class="muted" style="font-size:12px">3 y 6 cuotas sin interés</span></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M3 10h18"></path></svg></label>
+            <label class="pay-opt" data-discount="1"><input type="radio" name="pay"> <span style="flex:1"><b style="font-family:var(--display);font-size:14px;display:block">Transferencia bancaria <span class="green" style="font-size:11px">· 10% OFF</span></b><span class="muted" style="font-size:12px">Descuento por pago anticipado</span></span></label>
+            <label class="pay-opt" data-discount="1"><input type="radio" name="pay"> <span style="flex:1"><b style="font-family:var(--display);font-size:14px;display:block">Efectivo <span class="green" style="font-size:11px">· 10% OFF</span></b><span class="muted" style="font-size:12px">Pago en efectivo al recibir o retirar</span></span></label>
+            <label class="pay-opt"><input type="radio" name="pay"> <span style="flex:1"><b style="font-family:var(--display);font-size:14px;display:block">Mercado Pago</b><span class="muted" style="font-size:12px">Pagá con tu cuenta o QR</span></span></label>
+          </div>
+        </div>
+      </div>
+
+      <aside class="summary">
+        <h3 style="font-size:18px;margin-bottom:16px">Tu pedido</h3>
+        <div id="checkout-items"></div>
+        <div style="height:1px;background:var(--line);margin:14px 0"></div>
+        <div class="sum-row"><span>Subtotal</span><b id="co-subtotal">$0</b></div>
+        <div class="sum-row" id="co-discount-row" style="display:none"><span class="green">Descuento 10% (transf./efectivo)</span><b id="co-discount" class="green">−$0</b></div>
+        <div class="sum-row"><span>Envío</span><b id="co-ship" class="green">—</b></div>
+        <div style="height:1px;background:var(--line);margin:14px 0"></div>
+        <div class="sum-row" style="font-size:16px"><span style="color:#fff;font-weight:600">Total</span><b id="co-total" style="font-family:var(--display);font-size:22px">$0</b></div>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:18px">Confirmar pedido</button>
+        <div style="display:flex;align-items:center;gap:8px;justify-content:center;font-size:11.5px;color:#6b7280;margin-top:14px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Tus datos están protegidos</div>
+      </aside>
+    </form>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,.07)"><div class="row"><span>© 2026 Mutants Suplementos. Todos los derechos reservados.</span><div class="pays"><span>VISA</span><span>Mastercard</span><span>AMEX</span><span>Mercado Pago</span><span>Cabal</span></div></div></div>
+</footer>
+
+<div class="overlay" id="overlay" data-close></div>
+<a class="wa" data-wa="Hola Mutants! Tengo una consulta sobre mi compra." target="_blank" title="WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm4.52 16.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"></path></svg></a>
+<div class="toast" id="toast"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#08090B" stroke-width="2.6"><path d="M5 12l5 5L20 7"></path></svg><span id="toast-msg"></span></div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>

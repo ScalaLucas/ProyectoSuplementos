@@ -1,0 +1,1 @@
+Colocá aquí el hero principal como `hero.jpg` (la Home lo toma automáticamente) y otros banners de campaña.

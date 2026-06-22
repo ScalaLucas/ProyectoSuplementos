@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito — Mutants Suplementos</title>
+<link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+<body data-page="cart">
+
+<div class="announce"><div class="announce-track">
+  <span>★ Envío gratis desde $60.000</span><span>★ 3 y 6 cuotas sin interés</span><span>★ Productos 100% originales</span><span>★ 10% OFF transferencia / efectivo</span><span>★ Despacho en 24-48hs</span><span>★ +8 marcas líderes</span><span>★ Asesoramiento deportivo</span>
+  <span>★ Envío gratis desde $60.000</span><span>★ 3 y 6 cuotas sin interés</span><span>★ Productos 100% originales</span><span>★ 10% OFF transferencia / efectivo</span><span>★ Despacho en 24-48hs</span><span>★ +8 marcas líderes</span><span>★ Asesoramiento deportivo</span>
+</div></div>
+
+<nav class="nav">
+  <div style="display:flex;align-items:center;gap:18px">
+    <button class="burger" data-toggle-menu><span></span><span></span><span></span></button>
+    <a href="index.html" class="brand"><span class="diamond"></span><span style="display:flex;flex-direction:column;line-height:1"><span class="name">MUTANTS</span><span class="sub">SUPLEMENTOS</span></span></a>
+  </div>
+  <div class="nav-links">
+    <a href="productos.html">Productos</a><a href="index.html#categorias">Categorías</a><a href="index.html#marcas">Marcas</a><a href="productos.html">Ofertas</a><a href="contacto.html">Contacto</a>
+  </div>
+  <div class="nav-right">
+    <a href="carrito.html" class="cart-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="18" cy="20" r="1.4"></circle><path d="M6 6 5 3H2"></path></svg><span>Carrito</span><span class="cart-badge" data-cart-count>0</span></a>
+  </div>
+</nav>
+
+<section class="page-hero"><div class="container inner">
+  <div class="crumb" style="padding-top:0;margin-bottom:14px"><a href="index.html">Inicio</a><i>/</i><span style="color:#cfd3da">Carrito</span></div>
+  <h1>Tu carrito</h1>
+  <p>Revisá tus productos antes de finalizar la compra.</p>
+</div></section>
+
+<main class="container" id="cart-page">
+  <div class="checkout-grid" style="padding-top:30px">
+    <div id="cart-list"></div>
+    <div class="summary" id="cart-summary">
+      <h3 style="font-size:18px;margin-bottom:18px">Resumen</h3>
+      <div class="sum-row"><span>Subtotal</span><b id="cart-subtotal">$0</b></div>
+      <div class="sum-row"><span>Envío</span><b id="cart-ship" class="green">—</b></div>
+      <div style="height:1px;background:var(--line);margin:14px 0"></div>
+      <div class="sum-row" style="font-size:16px"><span style="color:#fff;font-weight:600">Total</span><b id="cart-total" style="font-family:var(--display);font-size:22px">$0</b></div>
+      <a href="checkout.html" class="btn btn-primary btn-block" style="margin-top:18px">Finalizar compra</a>
+      <a href="productos.html" class="btn btn-ghost btn-block" style="margin-top:10px">Seguir comprando</a>
+      <div style="display:flex;align-items:center;gap:8px;justify-content:center;font-size:11.5px;color:#6b7280;margin-top:16px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Compra 100% segura</div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:16px"><span class="diamond"></span><span class="name">MUTANTS</span></div>
+      <p>La tienda donde encontrás las mejores marcas del mercado. Suplementación deportiva premium, original y garantizada.</p>
+    </div>
+    <div><h4>TIENDA</h4><div class="col"><a href="productos.html">Todos los productos</a><a href="productos.html">Ofertas</a><a href="index.html#marcas">Marcas</a></div></div>
+    <div><h4>AYUDA</h4><div class="col"><a href="contacto.html">Envíos y entregas</a><a href="contacto.html">Medios de pago</a><a href="contacto.html">Contacto</a></div></div>
+    <div><h4>CONTACTO</h4><div class="col"><span>Lun a Vie · 9 a 20hs · Sáb 9 a 15hs</span><span class="green">WhatsApp +54 9 11 6119-0004</span><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5f3730333e1f322a2b3e312b2c713c3032">[email&#160;protected]</a></span></div></div>
+  </div>
+  <div class="footer-bottom"><div class="row"><span>© 2026 Mutants Suplementos. Todos los derechos reservados.</span><div class="pays"><span>VISA</span><span>Mastercard</span><span>Mercado Pago</span></div></div></div>
+</footer>
+
+<div class="overlay" id="overlay" data-close></div>
+<div class="mmenu" id="mmenu">
+  <div class="mmenu-head"><span class="name">Menú</span><button class="icon-btn" data-toggle-menu><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div>
+  <div class="mmenu-links"><a href="productos.html">Productos</a><a href="index.html#categorias">Categorías</a><a href="index.html#marcas">Marcas</a><a href="productos.html" class="green">Ofertas</a><a href="contacto.html">Contacto</a></div>
+</div>
+<a class="wa" data-wa="Hola Mutants! Quiero hacer una consulta." target="_blank" title="WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm4.52 16.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"></path></svg></a>
+<div class="toast" id="toast"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#08090B" stroke-width="2.6"><path d="M5 12l5 5L20 7"></path></svg><span id="toast-msg"></span></div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./js/script.js"></script>
+</body>
+</html>
