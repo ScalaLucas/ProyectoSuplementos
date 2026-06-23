@@ -12,135 +12,135 @@ var IMG = 'assets/products/';
 
 /* ---------------- CATÁLOGO ---------------- */
 var CATALOG = [
-  {id:'mm-van', name:'Mutant Mass 5KG', brand:'Star Nutrition', cat:'Ganadores de masa', goal:'Volumen', flavor:'Vainilla · 55 tomas', price:99000, rating:4.9, reviews:212, badge:'MÁS VENDIDO', pop:99, img:IMG+'mutant-mass-vanilla.jpeg'},
-  {id:'mm-str', name:'Mutant Mass 1.53KG', brand:'Star Nutrition', cat:'Ganadores de masa', goal:'Volumen', flavor:'Frutilla · 17 tomas', price:38300, rating:4.8, reviews:96, pop:74, img:IMG+'mutant-mass-strawberry.jpeg'},
-  {id:'mm-cho', name:'Mutant Mass 5KG', brand:'Star Nutrition', cat:'Ganadores de masa', goal:'Volumen', flavor:'Chocolate suizo', price:99000, rating:4.9, reviews:187, pop:95, img:IMG+'mutant-mass-chocolate.jpeg'},
-  {id:'bcaa-grn', name:'MTOR BCAA', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Recuperación', flavor:'Green Lemonade · 20 serv', price:24000, rating:4.9, reviews:143, pop:88, img:IMG+'mtor-bcaa-green.jpeg'},
-  {id:'bcaa-fr', name:'MTOR BCAA', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Recuperación', flavor:'Frutos Rojos · 20 serv', price:24000, rating:4.7, reviews:88, pop:70, img:IMG+'mtor-bcaa-frutos.jpeg'},
-  {id:'bcaa-sl', name:'MTOR BCAA', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Recuperación', flavor:'Frutilla–Lima · 20 serv', price:24000, rating:4.8, reviews:67, pop:65, img:IMG+'mtor-bcaa-strawberry.jpeg'},
-  {id:'crea-300', name:'Creatine Monohydrate 300G', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 60 serv', price:23000, rating:4.9, reviews:320, badge:'TOP', pop:98, img:IMG+'creatine-300.jpeg'},
-  {id:'crea-1k', name:'Creatine Monohydrate 1KG', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 200 serv', price:71000, rating:4.9, reviews:110, pop:80, img:IMG+'creatine-1000.jpeg'},
-  {id:'crea-bag', name:'Creatine Monohydrate 300G', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Frutos Rojos · 60 serv', price:23000, rating:4.8, reviews:74, pop:72, img:IMG+'creatine-bag.jpeg'},
-  {id:'col-fr', name:'Collagen Hidrolizado', brand:'Star Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'Frutos Rojos · 210g', price:16000, rating:4.8, reviews:74, pop:68, img:IMG+'collagen-frutos.jpeg'},
-  {id:'col-pl', name:'Collagen Plus', brand:'Star Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'Limón · 360g', price:18600, rating:4.7, reviews:51, pop:60, img:IMG+'collagen-plus-limon.jpeg'},
-  {id:'mag', name:'Citrato de Magnesio', brand:'Star Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'Frutos Rojos · 500g', price:24000, rating:4.8, reviews:129, pop:75, img:IMG+'magnesio.jpeg'},
-  {id:'hyd-li', name:'Hydro Plus Endurance', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Resistencia', flavor:'Lima Limón · rinde 10L', price:16000, rating:4.6, reviews:42, pop:55, img:IMG+'hydro-plus-lima.jpeg'},
-  {id:'hyd-bl', name:'Hydro Plus Endurance', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Resistencia', flavor:'Blue Raz · rinde 10L', price:16000, rating:4.7, reviews:38, pop:54, img:IMG+'hydro-plus-bluraz.jpeg'},
-  {id:'caf', name:'Caffeine 200', brand:'ENA', cat:'Pre-entrenos', goal:'Energía', flavor:'200mg · 30 cápsulas', price:8300, rating:4.9, reviews:156, badge:'TOP', pop:90, img:IMG+'caffeine-200.jpeg'},
-  {id:'cla', name:'CLA 1000', brand:'Star Nutrition', cat:'Quemadores', goal:'Definición', flavor:'90 cápsulas', price:20000, rating:4.5, reviews:63, pop:58, img:IMG+'cla-1000.jpeg'},
-  {id:'lcar', name:'L-Carnitine 1000', brand:'Star Nutrition', cat:'Quemadores', goal:'Definición', flavor:'60 comprimidos', price:12500, rating:4.6, reviews:71, pop:62, img:IMG+'l-carnitine.jpeg'},
-  {id:'plant', name:'Just Plant Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Definición', flavor:'Vegana · 2LB · 30 serv', price:35000, rating:4.7, reviews:45, badge:'NUEVO', pop:66, img:IMG+'plant-protein.jpeg'},
-  {id:'multi', name:'Multivitamin All In One', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'60 comprimidos', price:18000, rating:4.8, reviews:98, pop:78, img:IMG+'multivitamin.jpeg'},
-  {id:'iron', name:'IRON Multivitamin Pack', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Fruit Punch · 44 serv', price:85000, rating:4.7, reviews:52, pop:64, img:IMG+'iron-pack.jpeg'},
+  {id:'mm-van', name:'Mutant Mass 5KG', brand:'Star Nutrition', cat:'Ganadores de masa', goal:'Volumen', flavor:'Vainilla · 55 tomas', price:99000, rating:4.9, reviews:212, badge:'MÁS VENDIDO', pop:99, img:IMG+'mutant-mass-vanilla.png'},
+  {id:'mm-str', name:'Mutant Mass 1.53KG', brand:'Star Nutrition', cat:'Ganadores de masa', goal:'Volumen', flavor:'Frutilla · 17 tomas', price:38300, rating:4.8, reviews:96, pop:74, img:IMG+'mutant-mass-strawberry.png'},
+  {id:'mm-cho', name:'Mutant Mass 5KG', brand:'Star Nutrition', cat:'Ganadores de masa', goal:'Volumen', flavor:'Chocolate suizo', price:99000, rating:4.9, reviews:187, pop:95, img:IMG+'mutant-mass-chocolate.png'},
+  {id:'bcaa-grn', name:'MTOR BCAA', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Recuperación', flavor:'Green Lemonade · 20 serv', price:24000, rating:4.9, reviews:143, pop:88, img:IMG+'mtor-bcaa-green.png'},
+  {id:'bcaa-fr', name:'MTOR BCAA', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Recuperación', flavor:'Frutos Rojos · 20 serv', price:24000, rating:4.7, reviews:88, pop:70, img:IMG+'mtor-bcaa-frutos.png'},
+  {id:'bcaa-sl', name:'MTOR BCAA', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Recuperación', flavor:'Frutilla–Lima · 20 serv', price:24000, rating:4.8, reviews:67, pop:65, img:IMG+'mtor-bcaa-strawberry.png'},
+  {id:'crea-300', name:'Creatine Monohydrate 300G', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 60 serv', price:23000, rating:4.9, reviews:320, badge:'TOP', pop:98, img:IMG+'creatine-300.png'},
+  {id:'crea-1k', name:'Creatine Monohydrate 1KG', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 200 serv', price:71000, rating:4.9, reviews:110, pop:80, img:IMG+'creatine-1000.png'},
+  {id:'crea-bag', name:'Creatine Monohydrate 300G', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Frutos Rojos · 60 serv', price:23000, rating:4.8, reviews:74, pop:72, img:IMG+'creatine-bag.png'},
+  {id:'col-fr', name:'Collagen Hidrolizado', brand:'Star Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'Frutos Rojos · 210g', price:16000, rating:4.8, reviews:74, pop:68, img:IMG+'collagen-frutos.png'},
+  {id:'col-pl', name:'Collagen Plus', brand:'Star Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'Limón · 360g', price:18600, rating:4.7, reviews:51, pop:60, img:IMG+'collagen-plus-limon.png'},
+  {id:'mag', name:'Citrato de Magnesio', brand:'Star Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'Frutos Rojos · 500g', price:24000, rating:4.8, reviews:129, pop:75, img:IMG+'magnesio.png'},
+  {id:'hyd-li', name:'Hydro Plus Endurance', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Resistencia', flavor:'Lima Limón · rinde 10L', price:16000, rating:4.6, reviews:42, pop:55, img:IMG+'hydro-plus-lima.png'},
+  {id:'hyd-bl', name:'Hydro Plus Endurance', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Resistencia', flavor:'Blue Raz · rinde 10L', price:16000, rating:4.7, reviews:38, pop:54, img:IMG+'hydro-plus-bluraz.png'},
+  {id:'caf', name:'Caffeine 200', brand:'ENA', cat:'Pre-entrenos', goal:'Energía', flavor:'200mg · 30 cápsulas', price:8300, rating:4.9, reviews:156, badge:'TOP', pop:90, img:IMG+'caffeine-200.png'},
+  {id:'cla', name:'CLA 1000', brand:'Star Nutrition', cat:'Quemadores', goal:'Definición', flavor:'90 cápsulas', price:20000, rating:4.5, reviews:63, pop:58, img:IMG+'cla-1000.png'},
+  {id:'lcar', name:'L-Carnitine 1000', brand:'Star Nutrition', cat:'Quemadores', goal:'Definición', flavor:'60 comprimidos', price:12500, rating:4.6, reviews:71, pop:62, img:IMG+'l-carnitine.png'},
+  {id:'plant', name:'Just Plant Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Definición', flavor:'Vegana · 2LB · 30 serv', price:35000, rating:4.7, reviews:45, badge:'NUEVO', pop:66, img:IMG+'plant-protein.png'},
+  {id:'multi', name:'Multivitamin All In One', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'60 comprimidos', price:18000, rating:4.8, reviews:98, pop:78, img:IMG+'multivitamin.png'},
+  {id:'iron', name:'IRON Multivitamin Pack', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Fruit Punch · 44 serv', price:85000, rating:4.7, reviews:52, pop:64, img:IMG+'iron-pack.png'},
 
   /* ===== ENA ===== */
-  {id:'ena-whey-cho', name:'Truemade Whey Protein', brand:'ENA', cat:'Proteínas', goal:'Volumen', flavor:'Double Rich Chocolate · 930g', price:65500, rating:4.9, reviews:176, badge:'NUEVO', pop:92, img:IMG+'ena-whey-chocolate.jpeg'},
-  {id:'ena-whey-van', name:'Truemade Whey Protein', brand:'ENA', cat:'Proteínas', goal:'Volumen', flavor:'Vanilla Ice Cream · 930g', price:65500, rating:4.8, reviews:131, pop:86, img:IMG+'ena-whey-vainilla.jpeg'},
-  {id:'ena-whey-fru', name:'Truemade Whey Protein', brand:'ENA', cat:'Proteínas', goal:'Volumen', flavor:'Strawberry Milkshake · 930g', price:65500, rating:4.8, reviews:98, pop:80, img:IMG+'ena-whey-frutilla.jpeg'},
-  {id:'ena-whey-coo', name:'Truemade Whey Protein', brand:'ENA', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 930g', price:65500, rating:4.9, reviews:142, pop:88, img:IMG+'ena-whey-cookies.jpeg'},
-  {id:'ena-um-cho', name:'Ultra Mass Weight Gainer', brand:'ENA', cat:'Ganadores de masa', goal:'Volumen', flavor:'Double Rich Chocolate · 1.5kg', price:43000, rating:4.7, reviews:64, pop:75, img:IMG+'ena-ultramass-chocolate.jpeg'},
-  {id:'ena-um-van', name:'Ultra Mass Weight Gainer', brand:'ENA', cat:'Ganadores de masa', goal:'Volumen', flavor:'Vanilla Ice Cream · 1.5kg', price:43000, rating:4.7, reviews:51, pop:72, img:IMG+'ena-ultramass-vainilla.jpeg'},
-  {id:'ena-pw-fp', name:'Pre War Pre-Workout', brand:'ENA', cat:'Pre-entrenos', goal:'Energía', flavor:'Fruit Punch · 400g', price:27500, rating:4.8, reviews:89, badge:'TOP', pop:90, img:IMG+'ena-prewar-fruitpunch.jpeg'},
-  {id:'ena-pw-lem', name:'Pre War Pre-Workout', brand:'ENA', cat:'Pre-entrenos', goal:'Energía', flavor:'Lemonade · 400g', price:27500, rating:4.7, reviews:62, pop:78, img:IMG+'ena-prewar-lemonade.jpeg'},
-  {id:'ena-crea-1k', name:'Creatina Monohidrato', brand:'ENA', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 1000g · 200 serv', price:72000, rating:4.9, reviews:120, pop:84, img:IMG+'ena-creatina-1000.jpeg'},
-  {id:'ena-crea-fp', name:'Creatina Monohidrato', brand:'ENA', cat:'Creatinas', goal:'Fuerza', flavor:'Fruit Punch · 300g', price:24000, rating:4.8, reviews:77, pop:70, img:IMG+'ena-creatina-fruitpunch.jpeg'},
-  {id:'ena-crea-nar', name:'Creatina Monohidrato', brand:'ENA', cat:'Creatinas', goal:'Fuerza', flavor:'Naranja · 342g', price:24000, rating:4.8, reviews:58, pop:68, img:IMG+'ena-creatina-naranja.jpeg'},
-  {id:'ena-col', name:'Colágeno Sport', brand:'ENA', cat:'Recuperación', goal:'Recuperación', flavor:'Naranja · 407g', price:28000, rating:4.7, reviews:49, pop:62, img:IMG+'ena-colageno-sport.jpeg'},
-  {id:'ena-mag-c', name:'Magnesio Citrato', brand:'ENA', cat:'Recuperación', goal:'Recuperación', flavor:'60 cápsulas', price:13000, rating:4.8, reviews:96, pop:73, img:IMG+'ena-magnesio-caps.jpeg'},
-  {id:'ena-mag-p', name:'Citrato de Magnesio Polvo', brand:'ENA', cat:'Recuperación', goal:'Recuperación', flavor:'Lemonade · 192g', price:16400, rating:4.7, reviews:54, pop:64, img:IMG+'ena-magnesio-polvo.jpeg'},
-  {id:'ena-multi', name:'Multivitamin', brand:'ENA', cat:'Vitaminas', goal:'Salud', flavor:'Con cafeína · 60 comp', price:17000, rating:4.8, reviews:88, pop:74, img:IMG+'ena-multivitamin.jpeg'},
-  {id:'ena-zma', name:'ZMA', brand:'ENA', cat:'Recuperación', goal:'Recuperación', flavor:'Zinc + Magnesio + B6 · 60 caps', price:13000, rating:4.7, reviews:43, pop:60, img:IMG+'ena-zma.jpeg'},
-  {id:'ena-caf', name:'Cafeína 200', brand:'ENA', cat:'Pre-entrenos', goal:'Energía', flavor:'200mg · 60 cápsulas', price:11500, rating:4.8, reviews:71, pop:76, img:IMG+'ena-cafeina.jpeg'},
+  {id:'ena-whey-cho', name:'Truemade Whey Protein', brand:'ENA', cat:'Proteínas', goal:'Volumen', flavor:'Double Rich Chocolate · 930g', price:65500, rating:4.9, reviews:176, badge:'NUEVO', pop:92, img:IMG+'ena-whey-chocolate.png'},
+  {id:'ena-whey-van', name:'Truemade Whey Protein', brand:'ENA', cat:'Proteínas', goal:'Volumen', flavor:'Vanilla Ice Cream · 930g', price:65500, rating:4.8, reviews:131, pop:86, img:IMG+'ena-whey-vainilla.png'},
+  {id:'ena-whey-fru', name:'Truemade Whey Protein', brand:'ENA', cat:'Proteínas', goal:'Volumen', flavor:'Strawberry Milkshake · 930g', price:65500, rating:4.8, reviews:98, pop:80, img:IMG+'ena-whey-frutilla.png'},
+  {id:'ena-whey-coo', name:'Truemade Whey Protein', brand:'ENA', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 930g', price:65500, rating:4.9, reviews:142, pop:88, img:IMG+'ena-whey-cookies.png'},
+  {id:'ena-um-cho', name:'Ultra Mass Weight Gainer', brand:'ENA', cat:'Ganadores de masa', goal:'Volumen', flavor:'Double Rich Chocolate · 1.5kg', price:43000, rating:4.7, reviews:64, pop:75, img:IMG+'ena-ultramass-chocolate.png'},
+  {id:'ena-um-van', name:'Ultra Mass Weight Gainer', brand:'ENA', cat:'Ganadores de masa', goal:'Volumen', flavor:'Vanilla Ice Cream · 1.5kg', price:43000, rating:4.7, reviews:51, pop:72, img:IMG+'ena-ultramass-vainilla.png'},
+  {id:'ena-pw-fp', name:'Pre War Pre-Workout', brand:'ENA', cat:'Pre-entrenos', goal:'Energía', flavor:'Fruit Punch · 400g', price:27500, rating:4.8, reviews:89, badge:'TOP', pop:90, img:IMG+'ena-prewar-fruitpunch.png'},
+  {id:'ena-pw-lem', name:'Pre War Pre-Workout', brand:'ENA', cat:'Pre-entrenos', goal:'Energía', flavor:'Lemonade · 400g', price:27500, rating:4.7, reviews:62, pop:78, img:IMG+'ena-prewar-lemonade.png'},
+  {id:'ena-crea-1k', name:'Creatina Monohidrato', brand:'ENA', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 1000g · 200 serv', price:72000, rating:4.9, reviews:120, pop:84, img:IMG+'ena-creatina-1000.png'},
+  {id:'ena-crea-fp', name:'Creatina Monohidrato', brand:'ENA', cat:'Creatinas', goal:'Fuerza', flavor:'Fruit Punch · 300g', price:24000, rating:4.8, reviews:77, pop:70, img:IMG+'ena-creatina-fruitpunch.png'},
+  {id:'ena-crea-nar', name:'Creatina Monohidrato', brand:'ENA', cat:'Creatinas', goal:'Fuerza', flavor:'Naranja · 342g', price:24000, rating:4.8, reviews:58, pop:68, img:IMG+'ena-creatina-naranja.png'},
+  {id:'ena-col', name:'Colágeno Sport', brand:'ENA', cat:'Recuperación', goal:'Recuperación', flavor:'Naranja · 407g', price:28000, rating:4.7, reviews:49, pop:62, img:IMG+'ena-colageno-sport.png'},
+  {id:'ena-mag-c', name:'Magnesio Citrato', brand:'ENA', cat:'Recuperación', goal:'Recuperación', flavor:'60 cápsulas', price:13000, rating:4.8, reviews:96, pop:73, img:IMG+'ena-magnesio-caps.png'},
+  {id:'ena-mag-p', name:'Citrato de Magnesio Polvo', brand:'ENA', cat:'Recuperación', goal:'Recuperación', flavor:'Lemonade · 192g', price:16400, rating:4.7, reviews:54, pop:64, img:IMG+'ena-magnesio-polvo.png'},
+  {id:'ena-multi', name:'Multivitamin', brand:'ENA', cat:'Vitaminas', goal:'Salud', flavor:'Con cafeína · 60 comp', price:17000, rating:4.8, reviews:88, pop:74, img:IMG+'ena-multivitamin.png'},
+  {id:'ena-zma', name:'ZMA', brand:'ENA', cat:'Recuperación', goal:'Recuperación', flavor:'Zinc + Magnesio + B6 · 60 caps', price:13000, rating:4.7, reviews:43, pop:60, img:IMG+'ena-zma.png'},
+  {id:'ena-caf', name:'Cafeína 200', brand:'ENA', cat:'Pre-entrenos', goal:'Energía', flavor:'200mg · 60 cápsulas', price:11500, rating:4.8, reviews:71, pop:76, img:IMG+'ena-cafeina.png'},
 
   /* ===== GOLD NUTRITION ===== */
-  {id:'gold-whey-cho', name:'Whey Protein', brand:'Gold Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate', price:58000, rating:4.8, reviews:104, pop:85, img:IMG+'gold-whey-chocolate.jpeg'},
-  {id:'gold-whey-coo', name:'Whey Protein', brand:'Gold Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream', price:58000, rating:4.8, reviews:79, pop:79, img:IMG+'gold-whey-cookies.jpeg'},
-  {id:'gold-whey-fru', name:'Whey Protein', brand:'Gold Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Frutilla', price:58000, rating:4.7, reviews:66, pop:75, img:IMG+'gold-whey-frutilla.jpeg'},
-  {id:'gold-crea', name:'Creatine Monohydrate', brand:'Gold Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 300g', price:21000, rating:4.8, reviews:91, pop:80, img:IMG+'gold-creatine.jpeg'},
-  {id:'gold-creapure', name:'Creatine Creapure®', brand:'Gold Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Premium · sin sabor', price:29500, rating:4.9, reviews:58, badge:'PREMIUM', pop:82, img:IMG+'gold-creapure.jpeg'},
-  {id:'gold-testo', name:'Testo Gold', brand:'Gold Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Testosterona natural · caps', price:26800, rating:4.6, reviews:37, pop:58, img:IMG+'gold-testo.jpeg'},
-  {id:'gold-mag', name:'Magnesium Citrate', brand:'Gold Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'Caps', price:15000, rating:4.7, reviews:48, pop:62, img:IMG+'gold-magnesio.jpeg'},
-  {id:'gold-omega3', name:'Omega 3 Fish Oil', brand:'Gold Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:25500, rating:4.7, reviews:55, pop:66, img:IMG+'gold-omega3.jpeg'},
+  {id:'gold-whey-cho', name:'Whey Protein', brand:'Gold Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate', price:58000, rating:4.8, reviews:104, pop:85, img:IMG+'gold-whey-chocolate.png'},
+  {id:'gold-whey-coo', name:'Whey Protein', brand:'Gold Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream', price:58000, rating:4.8, reviews:79, pop:79, img:IMG+'gold-whey-cookies.png'},
+  {id:'gold-whey-fru', name:'Whey Protein', brand:'Gold Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Frutilla', price:58000, rating:4.7, reviews:66, pop:75, img:IMG+'gold-whey-frutilla.png'},
+  {id:'gold-crea', name:'Creatine Monohydrate', brand:'Gold Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 300g', price:21000, rating:4.8, reviews:91, pop:80, img:IMG+'gold-creatine.png'},
+  {id:'gold-creapure', name:'Creatine Creapure®', brand:'Gold Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Premium · sin sabor', price:29500, rating:4.9, reviews:58, badge:'PREMIUM', pop:82, img:IMG+'gold-creapure.png'},
+  {id:'gold-testo', name:'Testo Gold', brand:'Gold Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Testosterona natural · caps', price:26800, rating:4.6, reviews:37, pop:58, img:IMG+'gold-testo.png'},
+  {id:'gold-mag', name:'Magnesium Citrate', brand:'Gold Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'Caps', price:15000, rating:4.7, reviews:48, pop:62, img:IMG+'gold-magnesio.png'},
+  {id:'gold-omega3', name:'Omega 3 Fish Oil', brand:'Gold Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:25500, rating:4.7, reviews:55, pop:66, img:IMG+'gold-omega3.png'},
 
   /* ===== ONE FIT NUTRITION ===== */
-  {id:'onefit-crea', name:'Poweraded Creatine Micronized', brand:'One Fit Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 500g', price:24000, rating:4.7, reviews:62, pop:72, img:IMG+'onefit-creatine.jpeg'},
-  {id:'onefit-whey', name:'Classic Whey Protein', brand:'One Fit Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'2LB', price:31500, rating:4.7, reviews:54, pop:70, img:IMG+'onefit-whey.jpeg'},
-  {id:'onefit-mag', name:'Citrato de Magnesio', brand:'One Fit Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'450g', price:17000, rating:4.7, reviews:41, pop:60, img:IMG+'onefit-magnesio.jpeg'},
-  {id:'onefit-omega3', name:'Daily Omega 3', brand:'One Fit Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:18000, rating:4.6, reviews:38, pop:58, img:IMG+'onefit-omega3.jpeg'},
-  {id:'onefit-fric', name:'Friction 3.2 Pre-Workout', brand:'One Fit Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Explosive Energy', price:18000, rating:4.7, reviews:47, pop:74, img:IMG+'onefit-friction.jpeg'},
-  {id:'onefit-multi', name:'Multi + Vitamins', brand:'One Fit Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:11500, rating:4.7, reviews:44, pop:62, img:IMG+'onefit-multivitamins.jpeg'},
-  {id:'onefit-crea-200', name:'Poweraded Creatine Micronized', brand:'One Fit Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 200g · 40 serv', price:12000, rating:4.7, reviews:48, pop:67, img:IMG+'onefit-creatine-200.jpeg'},
-  {id:'onefit-mag-150', name:'Citrato de Magnesio', brand:'One Fit Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'150g · 60 serv', price:8000, rating:4.7, reviews:36, pop:56, img:IMG+'onefit-magnesio-150.jpeg'},
+  {id:'onefit-crea', name:'Poweraded Creatine Micronized', brand:'One Fit Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 500g', price:24000, rating:4.7, reviews:62, pop:72, img:IMG+'onefit-creatine.png'},
+  {id:'onefit-whey', name:'Classic Whey Protein', brand:'One Fit Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'2LB', price:31500, rating:4.7, reviews:54, pop:70, img:IMG+'onefit-whey.png'},
+  {id:'onefit-mag', name:'Citrato de Magnesio', brand:'One Fit Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'450g', price:17000, rating:4.7, reviews:41, pop:60, img:IMG+'onefit-magnesio.png'},
+  {id:'onefit-omega3', name:'Daily Omega 3', brand:'One Fit Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:18000, rating:4.6, reviews:38, pop:58, img:IMG+'onefit-omega3.png'},
+  {id:'onefit-fric', name:'Friction 3.2 Pre-Workout', brand:'One Fit Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Explosive Energy', price:18000, rating:4.7, reviews:47, pop:74, img:IMG+'onefit-friction.png'},
+  {id:'onefit-multi', name:'Multi + Vitamins', brand:'One Fit Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:11500, rating:4.7, reviews:44, pop:62, img:IMG+'onefit-multivitamins.png'},
+  {id:'onefit-crea-200', name:'Poweraded Creatine Micronized', brand:'One Fit Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 200g · 40 serv', price:12000, rating:4.7, reviews:48, pop:67, img:IMG+'onefit-creatine-200.png'},
+  {id:'onefit-mag-150', name:'Citrato de Magnesio', brand:'One Fit Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'150g · 60 serv', price:8000, rating:4.7, reviews:36, pop:56, img:IMG+'onefit-magnesio-150.png'},
 
   /* ===== LEGUILAB ===== */
-  {id:'legui-aza', name:'Azafrán + Vitamina B6', brand:'Leguilab', cat:'Vitaminas', goal:'Salud', flavor:'Health & Care · caps', price:25000, rating:4.7, reviews:33, badge:'NUEVO', pop:56, img:IMG+'leguilab-azafran.jpeg'},
-  {id:'legui-zinc', name:'Bisglicinato de Zinc', brand:'Leguilab', cat:'Vitaminas', goal:'Salud', flavor:'60 cápsulas vegetales', price:25000, rating:4.7, reviews:41, pop:58, img:IMG+'leguilab-zinc.jpeg'},
+  {id:'legui-aza', name:'Azafrán + Vitamina B6', brand:'Leguilab', cat:'Vitaminas', goal:'Salud', flavor:'Health & Care · caps', price:25000, rating:4.7, reviews:33, badge:'NUEVO', pop:56, img:IMG+'leguilab-azafran.png'},
+  {id:'legui-zinc', name:'Bisglicinato de Zinc', brand:'Leguilab', cat:'Vitaminas', goal:'Salud', flavor:'60 cápsulas vegetales', price:25000, rating:4.7, reviews:41, pop:58, img:IMG+'leguilab-zinc.png'},
 
   /* ===== MERVICK LAB ===== */
-  {id:'mervick-fram', name:'Whey Protein Bar', brand:'Mervick Lab', cat:'Barras', goal:'Definición', flavor:'Frambuesa · 65g · caja x12', price:24000, rating:4.6, reviews:52, pop:68, img:IMG+'mervick-bar-frambuesa.jpeg'},
-  {id:'mervick-ban', name:'Whey Protein Bar', brand:'Mervick Lab', cat:'Barras', goal:'Definición', flavor:'Banana · 46g · caja x12', price:19000, rating:4.6, reviews:47, pop:66, img:IMG+'mervick-bar-banana.jpeg'},
+  {id:'mervick-fram', name:'Whey Protein Bar', brand:'Mervick Lab', cat:'Barras', goal:'Definición', flavor:'Frambuesa · 65g · caja x12', price:24000, rating:4.6, reviews:52, pop:68, img:IMG+'mervick-bar-frambuesa.png'},
+  {id:'mervick-ban', name:'Whey Protein Bar', brand:'Mervick Lab', cat:'Barras', goal:'Definición', flavor:'Banana · 46g · caja x12', price:19000, rating:4.6, reviews:47, pop:66, img:IMG+'mervick-bar-banana.png'},
 
   /* ===== ULTIMATE NUTRITION ===== */
-  {id:'ult-mela', name:'Melatonin 3mg', brand:'Ultimate Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'60 cápsulas', price:23500, rating:4.8, reviews:73, pop:70, img:IMG+'ultimate-melatonin.jpeg'},
+  {id:'ult-mela', name:'Melatonin 3mg', brand:'Ultimate Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'60 cápsulas', price:23500, rating:4.8, reviews:73, pop:70, img:IMG+'ultimate-melatonin.png'},
 
   /* ===== XBODY EVOLUTION ===== */
-  {id:'xbody-crea', name:'Creatine Micronized', brand:'XBody Evolution', cat:'Creatinas', goal:'Fuerza', flavor:'5000mg · 300g · 60 serv', price:16500, rating:4.7, reviews:60, pop:71, img:IMG+'xbody-creatine.jpeg'},
+  {id:'xbody-crea', name:'Creatine Micronized', brand:'XBody Evolution', cat:'Creatinas', goal:'Fuerza', flavor:'5000mg · 300g · 60 serv', price:16500, rating:4.7, reviews:60, pop:71, img:IMG+'xbody-creatine.png'},
 
   /* ===== INNOVA NATURALS ===== */
-  {id:'innova-b12', name:'Vitamina B12', brand:'Innova Naturals', cat:'Vitaminas', goal:'Salud', flavor:'Metilcobalamina · caps', price:20000, rating:4.7, reviews:39, pop:57, img:IMG+'innova-b12.jpeg'},
-  {id:'innova-mag', name:'Citrato de Magnesio', brand:'Innova Naturals', cat:'Recuperación', goal:'Recuperación', flavor:'Caps', price:19000, rating:4.7, reviews:35, pop:55, img:IMG+'innova-magnesio.jpeg'},
+  {id:'innova-b12', name:'Vitamina B12', brand:'Innova Naturals', cat:'Vitaminas', goal:'Salud', flavor:'Metilcobalamina · caps', price:20000, rating:4.7, reviews:39, pop:57, img:IMG+'innova-b12.png'},
+  {id:'innova-mag', name:'Citrato de Magnesio', brand:'Innova Naturals', cat:'Recuperación', goal:'Recuperación', flavor:'Caps', price:19000, rating:4.7, reviews:35, pop:55, img:IMG+'innova-magnesio.png'},
 
   /* ===== STAR NUTRITION — Proteínas (nuevas) ===== */
-  {id:'star-whey-van', name:'Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Vainilla Ice Cream · 908g · 2LB', price:52500, rating:4.9, reviews:240, badge:'MÁS VENDIDO', pop:97, img:IMG+'star-whey-vainilla.jpeg'},
-  {id:'star-whey-cho', name:'Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate Suizo · 908g · 2LB', price:52500, rating:4.9, reviews:218, pop:96, img:IMG+'star-whey-chocolate.jpeg'},
-  {id:'star-whey-coo', name:'Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 908g · 2LB', price:52500, rating:4.9, reviews:172, pop:90, img:IMG+'star-whey-cookies.jpeg'},
-  {id:'star-whey-fru', name:'Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Strawberry Cream · 908g · 2LB', price:52500, rating:4.8, reviews:121, pop:84, img:IMG+'star-whey-frutilla.jpeg'},
-  {id:'star-whey-ban', name:'Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Banana Cream · 908g · 2LB', price:52500, rating:4.8, reviews:104, pop:82, img:IMG+'star-whey-banana.jpeg'},
-  {id:'star-plat-cho', name:'Platinum Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate Suizo · 908g · 2LB', price:56000, rating:4.9, reviews:156, badge:'PREMIUM', pop:91, img:IMG+'star-platinum-chocolate.jpeg'},
-  {id:'star-plat-van', name:'Platinum Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Vanilla Ice Cream · 908g · 2LB', price:56000, rating:4.9, reviews:132, pop:88, img:IMG+'star-platinum-vainilla.jpeg'},
-  {id:'star-plat-coo', name:'Platinum Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 908g · 2LB', price:56000, rating:4.8, reviews:98, pop:83, img:IMG+'star-platinum-cookies.jpeg'},
-  {id:'star-plat-fru', name:'Platinum Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Strawberry Cream · 908g · 2LB', price:56000, rating:4.8, reviews:76, pop:78, img:IMG+'star-platinum-frutilla.jpeg'},
-  {id:'star-plat-ban', name:'Platinum Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Banana Cream · 908g · 2LB', price:56000, rating:4.8, reviews:69, pop:76, img:IMG+'star-platinum-banana.jpeg'},
-  {id:'star-plat3k-cho', name:'Platinum Whey Protein 3KG', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate Suizo · 3KG · 100 serv', price:162000, rating:4.9, reviews:64, badge:'PACK PRO', pop:80, img:IMG+'star-platinum3k-chocolate.jpeg'},
-  {id:'star-plat3k-van', name:'Platinum Whey Protein 3KG', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Vanilla Ice Cream · 3KG · 100 serv', price:162000, rating:4.9, reviews:51, pop:77, img:IMG+'star-platinum3k-vainilla.jpeg'},
-  {id:'star-plat3k-coo', name:'Platinum Whey Protein 3KG', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 3KG · 100 serv', price:162000, rating:4.8, reviews:43, pop:74, img:IMG+'star-platinum3k-cookies.jpeg'},
-  {id:'star-plat3k-fru', name:'Platinum Whey Protein 3KG', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Strawberry Cream · 3KG · 100 serv', price:162000, rating:4.8, reviews:38, pop:71, img:IMG+'star-platinum3k-frutilla.jpeg'},
-  {id:'star-plat3k-ban', name:'Platinum Whey Protein 3KG', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Banana Cream · 3KG · 100 serv', price:162000, rating:4.8, reviews:35, pop:70, img:IMG+'star-platinum3k-banana.jpeg'},
+  {id:'star-whey-van', name:'Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Vainilla Ice Cream · 908g · 2LB', price:52500, rating:4.9, reviews:240, badge:'MÁS VENDIDO', pop:97, img:IMG+'star-whey-vainilla.png'},
+  {id:'star-whey-cho', name:'Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate Suizo · 908g · 2LB', price:52500, rating:4.9, reviews:218, pop:96, img:IMG+'star-whey-chocolate.png'},
+  {id:'star-whey-coo', name:'Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 908g · 2LB', price:52500, rating:4.9, reviews:172, pop:90, img:IMG+'star-whey-cookies.png'},
+  {id:'star-whey-fru', name:'Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Strawberry Cream · 908g · 2LB', price:52500, rating:4.8, reviews:121, pop:84, img:IMG+'star-whey-frutilla.png'},
+  {id:'star-whey-ban', name:'Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Banana Cream · 908g · 2LB', price:52500, rating:4.8, reviews:104, pop:82, img:IMG+'star-whey-banana.png'},
+  {id:'star-plat-cho', name:'Platinum Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate Suizo · 908g · 2LB', price:56000, rating:4.9, reviews:156, badge:'PREMIUM', pop:91, img:IMG+'star-platinum-chocolate.png'},
+  {id:'star-plat-van', name:'Platinum Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Vanilla Ice Cream · 908g · 2LB', price:56000, rating:4.9, reviews:132, pop:88, img:IMG+'star-platinum-vainilla.png'},
+  {id:'star-plat-coo', name:'Platinum Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 908g · 2LB', price:56000, rating:4.8, reviews:98, pop:83, img:IMG+'star-platinum-cookies.png'},
+  {id:'star-plat-fru', name:'Platinum Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Strawberry Cream · 908g · 2LB', price:56000, rating:4.8, reviews:76, pop:78, img:IMG+'star-platinum-frutilla.png'},
+  {id:'star-plat-ban', name:'Platinum Whey Protein', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Banana Cream · 908g · 2LB', price:56000, rating:4.8, reviews:69, pop:76, img:IMG+'star-platinum-banana.png'},
+  {id:'star-plat3k-cho', name:'Platinum Whey Protein 3KG', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate Suizo · 3KG · 100 serv', price:162000, rating:4.9, reviews:64, badge:'PACK PRO', pop:80, img:IMG+'star-platinum3k-chocolate.png'},
+  {id:'star-plat3k-van', name:'Platinum Whey Protein 3KG', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Vanilla Ice Cream · 3KG · 100 serv', price:162000, rating:4.9, reviews:51, pop:77, img:IMG+'star-platinum3k-vainilla.png'},
+  {id:'star-plat3k-coo', name:'Platinum Whey Protein 3KG', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 3KG · 100 serv', price:162000, rating:4.8, reviews:43, pop:74, img:IMG+'star-platinum3k-cookies.png'},
+  {id:'star-plat3k-fru', name:'Platinum Whey Protein 3KG', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Strawberry Cream · 3KG · 100 serv', price:162000, rating:4.8, reviews:38, pop:71, img:IMG+'star-platinum3k-frutilla.png'},
+  {id:'star-plat3k-ban', name:'Platinum Whey Protein 3KG', brand:'Star Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Banana Cream · 3KG · 100 serv', price:162000, rating:4.8, reviews:35, pop:70, img:IMG+'star-platinum3k-banana.png'},
 
   /* ===== STAR NUTRITION — Pre-entrenos / Quemadores / Vitaminas (nuevos) ===== */
-  {id:'star-v8-lima', name:'Pump V8 Next Gen', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Citrus Slush (Lima) · 285g · 30 serv', price:26000, rating:4.8, reviews:118, badge:'TOP', pop:92, img:IMG+'star-v8-lima.jpeg'},
-  {id:'star-v8-sand', name:'Pump V8 Next Gen', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Watermelon (Sandía) · 285g · 30 serv', price:26000, rating:4.8, reviews:97, pop:88, img:IMG+'star-v8-sandia.jpeg'},
-  {id:'star-v8-uva', name:'Pump V8 Next Gen', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Grape Attack (Uva) · 285g · 30 serv', price:26000, rating:4.7, reviews:81, pop:85, img:IMG+'star-v8-uva.jpeg'},
-  {id:'star-v8-acai', name:'Pump V8 Next Gen', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Açaí Power · 285g · 30 serv', price:26000, rating:4.8, reviews:73, pop:84, img:IMG+'star-v8-acai.jpeg'},
-  {id:'star-3d-fl', name:'Pump 3Di Ripped', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Definición', flavor:'Strawberry Lime · 315g · 45 serv', price:30500, rating:4.8, reviews:64, pop:82, img:IMG+'star-3dripped-frutillalima.jpeg'},
-  {id:'star-3d-lem', name:'Pump 3Di Ripped', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Definición', flavor:'Lemonade · 315g · 45 serv', price:30500, rating:4.7, reviews:52, pop:79, img:IMG+'star-3dripped-limonada.jpeg'},
-  {id:'star-thermo', name:'Thermo Fuel Max', brand:'Star Nutrition', cat:'Quemadores', goal:'Definición', flavor:'120 cápsulas · 30 serv', price:18500, rating:4.6, reviews:58, pop:64, img:IMG+'star-thermofuel.jpeg'},
-  {id:'star-glut', name:'L-Glutamine', brand:'Star Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'100% micronizada · 300g · 60 serv', price:24500, rating:4.8, reviews:71, pop:70, img:IMG+'star-glutamine.jpeg'},
-  {id:'star-hmb', name:'HMB Strength & Recovery', brand:'Star Nutrition', cat:'Recuperación', goal:'Fuerza', flavor:'180 cápsulas · 90 serv', price:22500, rating:4.7, reviews:44, pop:62, img:IMG+'star-hmb.jpeg'},
-  {id:'star-resv', name:'Resveratrol 500', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'100% natural · 60 cápsulas', price:18500, rating:4.7, reviews:39, pop:58, img:IMG+'star-resveratrol.jpeg'},
-  {id:'star-vitc', name:'Vitamina C', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'60 cápsulas', price:8500, rating:4.8, reviews:86, pop:72, img:IMG+'star-vitaminac.jpeg'},
-  {id:'star-k2d3', name:'Vitaminas K2 + D3', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'60 cápsulas', price:19500, rating:4.8, reviews:63, pop:68, img:IMG+'star-k2d3.jpeg'},
-  {id:'star-omega3', name:'Omega 3 Fish Oil', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'1000mg · 60 cápsulas', price:26500, rating:4.8, reviews:91, pop:74, img:IMG+'star-omega3.jpeg'},
+  {id:'star-v8-lima', name:'Pump V8 Next Gen', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Citrus Slush (Lima) · 285g · 30 serv', price:26000, rating:4.8, reviews:118, badge:'TOP', pop:92, img:IMG+'star-v8-lima.png'},
+  {id:'star-v8-sand', name:'Pump V8 Next Gen', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Watermelon (Sandía) · 285g · 30 serv', price:26000, rating:4.8, reviews:97, pop:88, img:IMG+'star-v8-sandia.png'},
+  {id:'star-v8-uva', name:'Pump V8 Next Gen', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Grape Attack (Uva) · 285g · 30 serv', price:26000, rating:4.7, reviews:81, pop:85, img:IMG+'star-v8-uva.png'},
+  {id:'star-v8-acai', name:'Pump V8 Next Gen', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Açaí Power · 285g · 30 serv', price:26000, rating:4.8, reviews:73, pop:84, img:IMG+'star-v8-acai.png'},
+  {id:'star-3d-fl', name:'Pump 3Di Ripped', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Definición', flavor:'Strawberry Lime · 315g · 45 serv', price:30500, rating:4.8, reviews:64, pop:82, img:IMG+'star-3dripped-frutillalima.png'},
+  {id:'star-3d-lem', name:'Pump 3Di Ripped', brand:'Star Nutrition', cat:'Pre-entrenos', goal:'Definición', flavor:'Lemonade · 315g · 45 serv', price:30500, rating:4.7, reviews:52, pop:79, img:IMG+'star-3dripped-limonada.png'},
+  {id:'star-thermo', name:'Thermo Fuel Max', brand:'Star Nutrition', cat:'Quemadores', goal:'Definición', flavor:'120 cápsulas · 30 serv', price:18500, rating:4.6, reviews:58, pop:64, img:IMG+'star-thermofuel.png'},
+  {id:'star-glut', name:'L-Glutamine', brand:'Star Nutrition', cat:'Recuperación', goal:'Recuperación', flavor:'100% micronizada · 300g · 60 serv', price:24500, rating:4.8, reviews:71, pop:70, img:IMG+'star-glutamine.png'},
+  {id:'star-hmb', name:'HMB Strength & Recovery', brand:'Star Nutrition', cat:'Recuperación', goal:'Fuerza', flavor:'180 cápsulas · 90 serv', price:22500, rating:4.7, reviews:44, pop:62, img:IMG+'star-hmb.png'},
+  {id:'star-resv', name:'Resveratrol 500', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'100% natural · 60 cápsulas', price:18500, rating:4.7, reviews:39, pop:58, img:IMG+'star-resveratrol.png'},
+  {id:'star-vitc', name:'Vitamina C', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'60 cápsulas', price:8500, rating:4.8, reviews:86, pop:72, img:IMG+'star-vitaminac.png'},
+  {id:'star-k2d3', name:'Vitaminas K2 + D3', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'60 cápsulas', price:19500, rating:4.8, reviews:63, pop:68, img:IMG+'star-k2d3.png'},
+  {id:'star-omega3', name:'Omega 3 Fish Oil', brand:'Star Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'1000mg · 60 cápsulas', price:26500, rating:4.8, reviews:91, pop:74, img:IMG+'star-omega3.png'},
 
   /* ===== STAR / XTRENGHT — Accesorios ===== */
-  {id:'star-shk-got', name:'Shaker Got Protein', brand:'Star Nutrition', cat:'Accesorios', goal:'Salud', flavor:'600ml · con resorte mezclador', price:9000, rating:4.7, reviews:54, pop:60, img:IMG+'star-shaker-gotprotein.jpeg'},
-  {id:'star-shk-v8', name:'Shaker Pump V8', brand:'Star Nutrition', cat:'Accesorios', goal:'Salud', flavor:'400ml · con compartimento', price:8500, rating:4.7, reviews:41, pop:58, img:IMG+'star-shaker-pumpv8.jpeg'},
-  {id:'xt-shk', name:'Shaker Xtrenght', brand:'Xtrenght', cat:'Accesorios', goal:'Salud', flavor:'600ml · con resorte mezclador', price:8500, rating:4.6, reviews:33, pop:55, img:IMG+'xt-shaker.jpeg'},
+  {id:'star-shk-got', name:'Shaker Got Protein', brand:'Star Nutrition', cat:'Accesorios', goal:'Salud', flavor:'600ml · con resorte mezclador', price:9000, rating:4.7, reviews:54, pop:60, img:IMG+'star-shaker-gotprotein.png'},
+  {id:'star-shk-v8', name:'Shaker Pump V8', brand:'Star Nutrition', cat:'Accesorios', goal:'Salud', flavor:'400ml · con compartimento', price:8500, rating:4.7, reviews:41, pop:58, img:IMG+'star-shaker-pumpv8.png'},
+  {id:'xt-shk', name:'Shaker Xtrenght', brand:'Xtrenght', cat:'Accesorios', goal:'Salud', flavor:'600ml · con resorte mezclador', price:8500, rating:4.6, reviews:33, pop:55, img:IMG+'xt-shaker.png'},
 
   /* ===== XTRENGHT — Proteínas / Creatinas / Quemadores (nuevos) ===== */
-  {id:'xt-adv-van', name:'Advanced Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Vainilla · 907g · 2LB · 30 serv', price:70000, rating:4.9, reviews:88, badge:'PREMIUM', pop:86, img:IMG+'xt-advanced-vainilla.jpeg'},
-  {id:'xt-adv-cho', name:'Advanced Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate · 907g · 2LB · 30 serv', price:70000, rating:4.9, reviews:79, pop:84, img:IMG+'xt-advanced-chocolate.jpeg'},
-  {id:'xt-adv-coo', name:'Advanced Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 907g · 2LB', price:70000, rating:4.8, reviews:61, pop:80, img:IMG+'xt-advanced-cookies.jpeg'},
-  {id:'xt-adv-ban', name:'Advanced Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Banana · 907g · 2LB · 30 serv', price:70000, rating:4.8, reviews:48, pop:76, img:IMG+'xt-advanced-banana.jpeg'},
-  {id:'xt-adv-fru', name:'Advanced Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Frutilla · 907g · 2LB · 30 serv', price:70000, rating:4.8, reviews:52, pop:77, img:IMG+'xt-advanced-frutilla.jpeg'},
-  {id:'xt-best-ban', name:'Best Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Banana · 907g · 2LB · 30 serv', price:54500, rating:4.8, reviews:57, pop:78, img:IMG+'xt-best-banana.jpeg'},
-  {id:'xt-best-cho', name:'Best Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate · 907g · 2LB · 30 serv', price:54500, rating:4.8, reviews:66, badge:'OFERTA', pop:81, img:IMG+'xt-best-chocolate.jpeg'},
-  {id:'xt-best-coo', name:'Best Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 907g · 2LB', price:54500, rating:4.8, reviews:49, pop:75, img:IMG+'xt-best-cookies.jpeg'},
-  {id:'xt-best-fru', name:'Best Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Frutilla · 907g · 2LB · 30 serv', price:54500, rating:4.7, reviews:41, pop:72, img:IMG+'xt-best-frutilla.jpeg'},
-  {id:'xt-best-van', name:'Best Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Vainilla · 907g · 2LB · 30 serv', price:54500, rating:4.8, reviews:55, pop:74, img:IMG+'xt-best-vainilla.jpeg'},
-  {id:'xt-crea-500', name:'Creatine Pharmaceutical Grade', brand:'Xtrenght', cat:'Creatinas', goal:'Fuerza', flavor:'Micronizada · 500g · 100 serv', price:30000, rating:4.9, reviews:72, badge:'TOP', pop:85, img:IMG+'xt-creatine-500.jpeg'},
-  {id:'xt-crea-250', name:'Creatine Pharmaceutical Grade', brand:'Xtrenght', cat:'Creatinas', goal:'Fuerza', flavor:'Micronizada · 250g · 50 serv', price:18000, rating:4.8, reviews:54, pop:73, img:IMG+'xt-creatine-250.jpeg'},
-  {id:'xt-cutter', name:'Cutter Thermogenic Fat Burner', brand:'Xtrenght', cat:'Quemadores', goal:'Definición', flavor:'120 cápsulas · 60 serv', price:14000, rating:4.6, reviews:47, pop:66, img:IMG+'xt-cutter.jpeg'}
+  {id:'xt-adv-van', name:'Advanced Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Vainilla · 907g · 2LB · 30 serv', price:70000, rating:4.9, reviews:88, badge:'PREMIUM', pop:86, img:IMG+'xt-advanced-vainilla.png'},
+  {id:'xt-adv-cho', name:'Advanced Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate · 907g · 2LB · 30 serv', price:70000, rating:4.9, reviews:79, pop:84, img:IMG+'xt-advanced-chocolate.png'},
+  {id:'xt-adv-coo', name:'Advanced Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 907g · 2LB', price:70000, rating:4.8, reviews:61, pop:80, img:IMG+'xt-advanced-cookies.png'},
+  {id:'xt-adv-ban', name:'Advanced Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Banana · 907g · 2LB · 30 serv', price:70000, rating:4.8, reviews:48, pop:76, img:IMG+'xt-advanced-banana.png'},
+  {id:'xt-adv-fru', name:'Advanced Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Frutilla · 907g · 2LB · 30 serv', price:70000, rating:4.8, reviews:52, pop:77, img:IMG+'xt-advanced-frutilla.png'},
+  {id:'xt-best-ban', name:'Best Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Banana · 907g · 2LB · 30 serv', price:54500, rating:4.8, reviews:57, pop:78, img:IMG+'xt-best-banana.png'},
+  {id:'xt-best-cho', name:'Best Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate · 907g · 2LB · 30 serv', price:54500, rating:4.8, reviews:66, badge:'OFERTA', pop:81, img:IMG+'xt-best-chocolate.png'},
+  {id:'xt-best-coo', name:'Best Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Cookies & Cream · 907g · 2LB', price:54500, rating:4.8, reviews:49, pop:75, img:IMG+'xt-best-cookies.png'},
+  {id:'xt-best-fru', name:'Best Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Frutilla · 907g · 2LB · 30 serv', price:54500, rating:4.7, reviews:41, pop:72, img:IMG+'xt-best-frutilla.png'},
+  {id:'xt-best-van', name:'Best Whey', brand:'Xtrenght', cat:'Proteínas', goal:'Volumen', flavor:'Vainilla · 907g · 2LB · 30 serv', price:54500, rating:4.8, reviews:55, pop:74, img:IMG+'xt-best-vainilla.png'},
+  {id:'xt-crea-500', name:'Creatine Pharmaceutical Grade', brand:'Xtrenght', cat:'Creatinas', goal:'Fuerza', flavor:'Micronizada · 500g · 100 serv', price:30000, rating:4.9, reviews:72, badge:'TOP', pop:85, img:IMG+'xt-creatine-500.png'},
+  {id:'xt-crea-250', name:'Creatine Pharmaceutical Grade', brand:'Xtrenght', cat:'Creatinas', goal:'Fuerza', flavor:'Micronizada · 250g · 50 serv', price:18000, rating:4.8, reviews:54, pop:73, img:IMG+'xt-creatine-250.png'},
+  {id:'xt-cutter', name:'Cutter Thermogenic Fat Burner', brand:'Xtrenght', cat:'Quemadores', goal:'Definición', flavor:'120 cápsulas · 60 serv', price:14000, rating:4.6, reviews:47, pop:66, img:IMG+'xt-cutter.png'}
 ];
 window.MUTANTS_CATALOG = CATALOG;
 
@@ -157,6 +157,19 @@ function qsa(s,r){ return Array.prototype.slice.call((r||document).querySelector
 function el(tag,cls,html){ var e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e; }
 function svg(p,w){ w=w||20; return '<svg width="'+w+'" height="'+w+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">'+p+'</svg>'; }
 function waLink(text){ return 'https://wa.me/'+WHATSAPP+(text?('?text='+encodeURIComponent(text)):''); }
+/* group variants (same brand + same name = same product, distinct flavor) */
+function groupKey(p){ return p.brand+'|'+p.name; }
+function variantsOf(p){ var k=groupKey(p); return CATALOG.filter(function(x){return groupKey(x)===k;}); }
+function collapse(list){
+  var seen={}, out=[];
+  list.forEach(function(p){ var k=groupKey(p); if(seen[k])return; seen[k]=1;
+    // representative: prefer one with a badge, else this one
+    var grp=list.filter(function(x){return groupKey(x)===k;});
+    var rep=grp.filter(function(x){return x.badge;})[0]||grp[0];
+    out.push(rep);
+  });
+  return out;
+}
 
 /* ---------------- CART (localStorage) ---------------- */
 var CART_KEY = 'mutants_cart_v1';
@@ -188,6 +201,7 @@ function toggleMenu(){ var m=qs('#mmenu'),o=qs('#overlay'); if(!m)return; var op
 /* ---------------- RENDER: product card ---------------- */
 function productCard(p){
   var c=el('div','prod-card');
+  var vc=variantsOf(p).length;
   c.innerHTML =
     '<div class="prod-media">'+
       '<a href="producto.html?id='+p.id+'" style="position:absolute;inset:0;z-index:1"></a>'+
@@ -199,7 +213,7 @@ function productCard(p){
       '<div class="prod-top"><span class="prod-brand">'+p.brand+'</span>'+
         '<span class="prod-rate">★ '+p.rating.toFixed(1)+' <small>('+p.reviews+')</small></span></div>'+
       '<a href="producto.html?id='+p.id+'" class="prod-name">'+p.name+'</a>'+
-      '<div class="prod-flavor">'+p.flavor+'</div>'+
+      '<div class="prod-flavor">'+(vc>1?(vc+' sabores disponibles'):p.flavor)+'</div>'+
       '<div class="prod-foot"><div>'+
         (p.old?'<div class="price-old">'+money(p.old)+'</div>':'')+
         '<div class="price">'+money(p.price)+'</div>'+
@@ -324,7 +338,7 @@ function initHome(){
     var cnt=CATALOG.filter(function(p){return p.cat===name;}).length;
     var a=el('a','cat-card'); a.href='productos.html?cat='+encodeURIComponent(name);
     a.setAttribute('data-reveal','');
-    a.innerHTML='<div class="glow"></div><div class="pic"><img src="'+IMG+CAT_IMG[name]+'.jpeg" alt=""></div>'+
+    a.innerHTML='<div class="glow"></div><div class="pic"><img src="'+IMG+CAT_IMG[name]+'.png" alt=""></div>'+
       '<div><div class="ttl">'+name+'</div><div class="cnt">'+cnt+' productos</div></div>';
     cg.appendChild(a);
   }); observeReveal(qsa('.cat-card[data-reveal]',cg)); setTimeout(function(){ qsa('.cat-card[data-reveal]',cg).forEach(function(el){ el.classList.add('in'); }); },250); }
@@ -336,7 +350,7 @@ function initHome(){
       var list=CATALOG.slice();
       if(state.cat!=='Todos') list=list.filter(function(p){return p.cat===state.cat;});
       if(state.q){ var q=state.q.toLowerCase(); list=list.filter(function(p){return (p.name+' '+p.brand+' '+p.flavor+' '+p.cat).toLowerCase().indexOf(q)>-1;}); }
-      renderGrid(grid,list);
+      renderGrid(grid,collapse(list));
     }
     var chipsWrap=qs('#home-chips');
     if(chipsWrap){ ['Todos'].concat(CATEGORIES).forEach(function(label){
@@ -354,6 +368,23 @@ function initHome(){
   var bt=qs('#brands-track');
   if(bt){ var html=''; BRANDS.concat(BRANDS).forEach(function(b){ html+='<span>'+b.toUpperCase()+'</span>'; }); bt.innerHTML=html; }
   initParticles(); initCounters();
+  initNavSpy();
+}
+
+/* Scroll-spy: highlight nav link for the section in view (home only) */
+function initNavSpy(){
+  var links=qsa('.nav-links a').filter(function(a){return (a.getAttribute('href')||'').indexOf('#')>-1;});
+  if(!links.length) return;
+  var map=links.map(function(a){ var id=a.getAttribute('href').split('#')[1]; return {a:a, sec:document.getElementById(id)}; }).filter(function(m){return m.sec;});
+  function spy(){
+    var y=window.scrollY+120, best=null;
+    map.forEach(function(m){ if(m.sec.offsetTop<=y) best=m; });
+    links.forEach(function(a){a.classList.remove('active');});
+    // only highlight when actually within the page sections region
+    if(best && window.scrollY>200) best.a.classList.add('active');
+  }
+  window.addEventListener('scroll', spy, {passive:true});
+  spy();
 }
 
 /* CATALOG (productos.html) */
@@ -403,8 +434,9 @@ function initCatalog(){
     else if(state.sort==='price-desc') list.sort(function(a,b){return b.price-a.price;});
     else if(state.sort==='rating') list.sort(function(a,b){return b.rating-a.rating;});
     else list.sort(function(a,b){return b.pop-a.pop;});
-    renderGrid(grid,list);
-    var cnt=qs('#catalog-count'); if(cnt) cnt.textContent=list.length+' producto'+(list.length===1?'':'s');
+    var col=collapse(list);
+    renderGrid(grid,col);
+    var cnt=qs('#catalog-count'); if(cnt) cnt.textContent=col.length+' producto'+(col.length===1?'':'s');
   }
   render();
 }
@@ -416,8 +448,8 @@ function initProduct(){
   var id=params.get('id')||'mm-van';
   var p=byId(id)||CATALOG[0];
 
-  // group flavors of same base product (by name root) for Mutant Mass-like variants
-  var family=CATALOG.filter(function(x){return x.name.split(' ')[0]===p.name.split(' ')[0] && x.cat===p.cat;});
+  // group flavors of the SAME product (same brand + same name) — distinct sizes stay separate
+  var family=variantsOf(p);
   var gallery=[p.img].concat(family.map(function(f){return f.img;})).filter(function(v,i,a){return a.indexOf(v)===i;}).slice(0,4);
   var qty=1, activeImg=p.img;
 

@@ -35,6 +35,7 @@ a{color:inherit;text-decoration:none}
 button{font-family:var(--body)}
 h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.04;letter-spacing:-.01em}
 .container{max-width:var(--maxw);margin:0 auto;padding-left:clamp(16px,4vw,52px);padding-right:clamp(16px,4vw,52px)}
+#categorias,#marcas,#productos,#comunidad{scroll-margin-top:96px}
 .display{font-family:var(--display)}
 .green{color:var(--green)}
 .violet{color:var(--violet)}
@@ -71,6 +72,8 @@ h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.04;letter-spacing:
 .nav{position:sticky;top:0;z-index:55;display:flex;align-items:center;justify-content:space-between;gap:24px;
   padding:16px clamp(16px,4vw,52px);background:rgba(8,9,11,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}
 .brand{display:flex;align-items:center;gap:11px}
+.brand-logo{height:50px;width:auto;display:block}
+.footer-logo{height:48px;width:auto;display:block;margin-bottom:16px}
 .brand .diamond{width:13px;height:13px;background:linear-gradient(135deg,var(--green),var(--violet));transform:rotate(45deg);border-radius:2px;box-shadow:0 0 14px rgba(124,255,79,.6)}
 .brand .name{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:.02em;line-height:1}
 .brand .sub{font-size:8.5px;letter-spacing:.42em;color:var(--green);margin-top:3px;font-weight:600}
