@@ -489,6 +489,7 @@ function initProduct(){
 
   qs('#pd-brand').textContent=p.brand;
   qs('#pd-name').textContent=p.name;
+  var badgeEl=qs('#pd-badge'); if(badgeEl){ if(p.badge){ badgeEl.textContent=p.badge; badgeEl.style.display=''; } else { badgeEl.style.display='none'; } }
   qs('#pd-rating').innerHTML='★★★★★ <span style="color:#cfd3da;font-size:13px">'+p.rating.toFixed(1)+'</span>';
   qs('#pd-reviews').textContent=p.reviews+' reseñas';
   qs('#pd-flavor').textContent=p.flavor;
@@ -615,17 +616,50 @@ function initCheckout(){
     qs('#co-total').textContent=money(sub-disc+ship);
   };
   window.__renderCheckout();
+  function syncPayButton(){
+    var btn=qs('#checkout-form button[type=submit]'); if(!btn) return;
+    var active=qs('.pay-opt.active');
+    btn.textContent = (active && active.getAttribute('data-online')) ? 'Pagar con tarjeta' : 'Confirmar pedido';
+  }
   // payment selection
-  qsa('.pay-opt').forEach(function(o){ o.addEventListener('click',function(){ qsa('.pay-opt').forEach(function(x){x.classList.remove('active');}); o.classList.add('active'); var r=o.querySelector('input'); if(r)r.checked=true; window.__renderCheckout(); }); });
+  qsa('.pay-opt').forEach(function(o){ o.addEventListener('click',function(){ qsa('.pay-opt').forEach(function(x){x.classList.remove('active');}); o.classList.add('active'); var r=o.querySelector('input'); if(r)r.checked=true; window.__renderCheckout(); syncPayButton(); }); });
+  syncPayButton();
   // submit
   var form=qs('#checkout-form');
   if(form){ form.addEventListener('submit',function(e){ e.preventDefault();
     var cart=loadCart();
     if(!cart.length){ toast('Tu carrito está vacío'); return; }
-    // build WhatsApp order BEFORE clearing
+    var active=qs('.pay-opt.active');
+    var isOnline = active && active.getAttribute('data-online');
+
+    // ---- PAGO ONLINE CON TARJETA (Mercado Pago) ----
+    if(isOnline){
+      var btn=qs('#checkout-form button[type=submit]');
+      if(btn){ btn.disabled=true; btn.textContent='Redirigiendo a Mercado Pago…'; }
+      fetch('api/crear-preferencia.php', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ cart: cart })
+      }).then(function(r){ return r.json(); }).then(function(d){
+        if(d && d.init_point){ window.location.href = d.init_point; }
+        else { throw new Error((d && d.error) || 'Error'); }
+      }).catch(function(){
+        if(btn){ btn.disabled=false; btn.textContent='Pagar con tarjeta'; }
+        // Respaldo: si el backend no está disponible, cerrar por WhatsApp
+        var orderNo='#MUT-2026-'+Math.floor(1000+Math.random()*9000);
+        var sub=cartSubtotal(), ship=sub>=60000?0:(sub>0?4999:0), total=sub+ship;
+        var msg='*Nuevo pedido Mutants* '+orderNo+'\n\n';
+        cart.forEach(function(i){ var p=byId(i.id); if(p) msg+='• '+i.qty+'x '+p.name+' ('+p.flavor+') — '+money(cardPrice(p)*i.qty)+'\n'; });
+        msg+='\nEnvío: '+(ship?money(ship):'Gratis')+'\nPago: Tarjeta\n*Total: '+money(total)+'*';
+        toast('Te derivamos a WhatsApp para coordinar el pago.');
+        window.open(waLink(msg), '_blank');
+      });
+      return;
+    }
+
+    // ---- TRANSFERENCIA / EFECTIVO (cierre por WhatsApp) ----
     var orderNo='#MUT-2026-'+Math.floor(1000+Math.random()*9000);
     var sub=cartSubtotal(), ship=sub>=60000?0:(sub>0?4999:0);
-    var active=qs('.pay-opt.active'); var disc=(active&&active.getAttribute('data-discount'))?(sub-cartSubtotalTransfer()):0;
+    var disc=(active&&active.getAttribute('data-discount'))?(sub-cartSubtotalTransfer()):0;
     var total=sub-disc+ship;
     var paySel=qs('.pay-opt.active b'); var payName=paySel?paySel.textContent:'A coordinar';
     var msg='*Nuevo pedido Mutants* '+orderNo+'\n\n';
