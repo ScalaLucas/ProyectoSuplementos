@@ -171,9 +171,12 @@ h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.04;letter-spacing:
 .prod-flavor{font-size:12px;color:var(--muted2);margin-bottom:14px}
 .prod-foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
 .price-old{font-size:12px;color:#6b7280;text-decoration:line-through}
-.price{font-family:var(--display);font-weight:700;font-size:20px}
-.price-transfer{font-size:11px;color:var(--green);font-weight:600;margin-top:2px;line-height:1.2}
-.price-transfer span{color:var(--muted2);font-weight:500}
+.price{font-family:var(--display);font-weight:700;font-size:20px;line-height:1}
+.price-block{display:flex;flex-direction:column;gap:3px}
+.price-cap{font-size:10px;color:var(--muted2);letter-spacing:.04em;margin-top:1px}
+.price-transfer{display:inline-flex;flex-direction:column;align-items:flex-start;margin-top:4px;background:rgba(124,255,79,.1);border:1px solid rgba(124,255,79,.32);border-radius:9px;padding:5px 9px;line-height:1.15}
+.price-transfer b{font-family:var(--display);font-weight:700;font-size:15px;color:var(--green)}
+.price-transfer span{color:#9fb6a4;font-weight:500;font-size:9.5px;letter-spacing:.02em}
 .add-btn{flex:none;width:44px;height:44px;border-radius:12px;background:var(--green);color:#08090B;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(124,255,79,.3);transition:transform .2s}
 .add-btn:hover{transform:scale(1.08)}
 .no-results{padding:50px 10px;text-align:center;color:var(--muted2);border:1px dashed rgba(255,255,255,.12);border-radius:18px}
@@ -255,6 +258,7 @@ h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.04;letter-spacing:
 .mmenu-head{display:flex;align-items:center;justify-content:between;padding:20px;border-bottom:1px solid var(--line);justify-content:space-between}
 .mmenu-links{display:flex;flex-direction:column;padding:14px 20px;gap:4px;font-family:var(--display);font-weight:600;font-size:18px}
 .mmenu-links a{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.mmenu-links a.active{color:var(--green)}
 
 /* ---------- WhatsApp + toast ---------- */
 .wa{position:fixed;right:22px;bottom:22px;z-index:70;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(37,211,102,.45);transition:transform .2s}
@@ -293,6 +297,21 @@ h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.04;letter-spacing:
 .qty-lg{display:flex;align-items:center;border:1px solid var(--line-strong);border-radius:13px;overflow:hidden}
 .qty-lg button{width:46px;height:54px;background:rgba(255,255,255,.04);border:none;color:#fff;cursor:pointer;font-size:20px}
 .qty-lg span{min-width:46px;text-align:center;font-family:var(--display);font-weight:600;font-size:17px}
+.pd-add-btn{flex:1;min-width:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 20px}
+.pd-add-label{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+.pd-add-price{font-family:var(--display);font-weight:700;white-space:nowrap;padding-left:12px;border-left:1px solid rgba(8,9,11,.22)}
+@media(max-width:520px){
+  .pd-actions{flex-wrap:wrap}
+  .qty-lg button{width:44px;height:52px}
+  .qty-lg span{min-width:42px;font-size:16px}
+  .pd-add-btn{flex:1 1 100%;order:2}
+  .pd-add-btn{padding:15px 18px;font-size:14.5px}
+  .pd-add-label svg{width:18px;height:18px}
+}
+@media(max-width:360px){
+  .pd-add-label{gap:7px}
+  .pd-add-btn{font-size:14px;gap:8px}
+}
 .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-top:1px solid var(--line);padding-top:22px}
 .trust{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
 .trust .ic{color:var(--green)}
