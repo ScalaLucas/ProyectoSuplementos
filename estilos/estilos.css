@@ -145,7 +145,7 @@ h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.04;letter-spacing:
 .brands-title{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.6vw,40px);line-height:1.04;margin:10px auto 0;max-width:18ch}
 .brands-sub{color:var(--muted2);font-size:15px;max-width:52ch;margin:14px auto 0}
 .brands-row{display:flex;white-space:nowrap;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.brands-track{display:inline-flex;gap:56px;align-items:center;padding-right:56px;animation:mu-marquee 30s linear infinite}
+.brands-track{display:inline-flex;gap:56px;align-items:center;padding-right:56px;animation:mu-marquee 30s linear infinite;will-change:transform;transform:translateZ(0);backface-visibility:hidden}
 .brands-track span{font-family:var(--display);font-weight:700;font-size:23px;color:#5a606b;letter-spacing:.02em;transition:color .2s}
 .brands-track span:hover{color:#fff}
 
