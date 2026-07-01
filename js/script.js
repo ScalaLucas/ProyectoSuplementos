@@ -23,15 +23,18 @@ var CATALOG = [
   {id:'bcaa-grn', name:'MTOR BCAA', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Recuperación', flavor:'Green Lemonade · 20 serv', price:24000, priceCard:26400, rating:4.9, reviews:143, pop:88, img:IMG+'mtor-bcaa-green.png'},
   {id:'bcaa-fr', name:'MTOR BCAA', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Recuperación', flavor:'Frutos Rojos · 20 serv', price:24000, priceCard:26400, rating:4.7, reviews:88, pop:70, img:IMG+'mtor-bcaa-frutos.png'},
   {id:'bcaa-sl', name:'MTOR BCAA', brand:'Star Nutrition', cat:'Aminoácidos', goal:'Recuperación', flavor:'Frutilla–Lima · 20 serv', price:24000, priceCard:26400, rating:4.8, reviews:67, pop:65, img:IMG+'mtor-bcaa-strawberry.png'},
-  {id:'crea-300', name:'Creatina Monohidrato 300g', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 60 serv', price:23000, priceCard:25300, rating:4.9, reviews:320, badge:'TOP', pop:98, img:IMG+'creatine-300.png'},
+  {id:'crea-300', name:'Creatina Monohidrato Pote 300g', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 60 serv', price:25000, priceCard:27500, rating:4.9, reviews:320, badge:'TOP', pop:98, img:IMG+'creatine-300.png'},
   {id:'crea-1k', name:'Creatina Monohidrato 1KG', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 200 serv', price:71000, priceCard:78500, rating:4.9, reviews:110, pop:80, img:IMG+'creatine-1000.png'},
-  {id:'crea-bag', name:'Creatina Monohidrato 300g Frutos Rojos', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Frutos Rojos · 60 serv', price:23000, priceCard:25300, rating:4.8, reviews:74, pop:72, img:IMG+'creatine-bag.png'},
+  {id:'crea-bag-sin', name:'Creatina Monohidrato Doypack 300g', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 60 serv', price:23000, priceCard:25300, rating:4.9, reviews:96, pop:84, img:IMG+'creatine-bag.png'},
+  {id:'crea-bag', name:'Creatina Monohidrato Doypack 300g', brand:'Star Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Frutos Rojos · 60 serv', price:23000, priceCard:25300, rating:4.8, reviews:74, pop:72, img:IMG+'star-creatine-fr-bag.jpg'},
   {id:'col-fr', name:'Colágeno Hidrolizado', brand:'Star Nutrition', cat:'Colágeno', goal:'Recuperación', flavor:'Frutos Rojos · 210g', price:16000, priceCard:17600, rating:4.8, reviews:74, pop:68, img:IMG+'collagen-frutos.png'},
   {id:'col-lim', name:'Colágeno Hidrolizado', brand:'Star Nutrition', cat:'Colágeno', goal:'Recuperación', flavor:'Limón · 210g · 20 serv', price:16000, priceCard:17600, rating:4.8, reviews:63, pop:67, img:IMG+'collagen-limon.png'},
-  {id:'star-col-sport', name:'Colágeno Sport', brand:'Star Nutrition', cat:'Colágeno', goal:'Recuperación', flavor:'Naranja · 360g · 30 serv', price:23000, priceCard:25300, rating:4.8, reviews:47, pop:66, img:IMG+'collagen-sport-naranja.png'},
+  {id:'star-col-sport', name:'Colágeno Sport', brand:'Star Nutrition', cat:'Colágeno', goal:'Recuperación', flavor:'Naranja · 360g · 30 serv', price:18600, priceCard:20500, rating:4.8, reviews:47, pop:66, img:IMG+'collagen-sport-naranja.png'},
   {id:'col-pl', name:'Colágeno Plus', brand:'Star Nutrition', cat:'Colágeno', goal:'Recuperación', flavor:'Limón · 360g', price:18600, priceCard:20500, rating:4.7, reviews:51, pop:60, img:IMG+'collagen-plus-limon.png'},
   {id:'mag', name:'Citrato de Magnesio', brand:'Star Nutrition', cat:'Citrato de Magnesio', goal:'Recuperación', flavor:'Frutos Rojos · 500g · 142 serv', price:24000, priceCard:26400, rating:4.8, reviews:129, pop:75, img:IMG+'magnesio.png'},
   {id:'mag-neutro', name:'Citrato de Magnesio', brand:'Star Nutrition', cat:'Citrato de Magnesio', goal:'Recuperación', flavor:'Sin sabor (neutro) · 500g · 142 serv', price:24000, priceCard:26400, rating:4.8, reviews:84, pop:74, img:IMG+'magnesio-neutro.png'},
+  {id:'star-mag-caps', name:'Citrato de Magnesio', brand:'Star Nutrition', cat:'Citrato de Magnesio', goal:'Recuperación', flavor:'60 cápsulas', price:14000, priceCard:15400, rating:4.8, reviews:112, pop:76, img:IMG+'star-magnesio-caps.jpg'},
+  {id:'star-zma', name:'ZMA', brand:'Star Nutrition', cat:'Resto de suplementos', goal:'Recuperación', flavor:'The Real ZMA · 90 cápsulas', price:14000, priceCard:15400, rating:4.8, reviews:67, pop:70, img:IMG+'star-zma.jpg'},
   {id:'hyd-li', name:'Hydro Plus Resistencia', brand:'Star Nutrition', cat:'Hidratación', goal:'Resistencia', flavor:'Lima Limón · rinde 10L', price:16000, priceCard:17600, rating:4.6, reviews:42, pop:55, img:IMG+'hydro-plus-lima.png'},
   {id:'hyd-bl', name:'Hydro Plus Resistencia', brand:'Star Nutrition', cat:'Hidratación', goal:'Resistencia', flavor:'Blue Raz · rinde 10L', price:16000, priceCard:17600, rating:4.7, reviews:38, pop:54, img:IMG+'hydro-plus-bluraz.png'},
   {id:'caf', name:'Cafeína 200', brand:'Star Nutrition', cat:'Energía', goal:'Energía', flavor:'200mg · 30 cápsulas', price:8300, priceCard:9200, rating:4.9, reviews:156, badge:'TOP', pop:90, img:IMG+'caffeine-200.png'},
@@ -50,7 +53,7 @@ var CATALOG = [
   {id:'ena-um-van', name:'Ultra Mass Ganador de Masa', brand:'ENA', cat:'Ganadores de masa', goal:'Volumen', flavor:'Vainilla · 1.5kg', price:43000, priceCard:47300, rating:4.7, reviews:51, pop:72, img:IMG+'ena-ultramass-vainilla.png'},
   {id:'ena-pw-fp', name:'Pre War Pre-Entreno', brand:'ENA', cat:'Pre-entrenos', goal:'Energía', flavor:'Fruit Punch · 400g', price:27500, priceCard:30250, rating:4.8, reviews:89, badge:'TOP', pop:90, img:IMG+'ena-prewar-fruitpunch.png'},
   {id:'ena-pw-lem', name:'Pre War Pre-Entreno', brand:'ENA', cat:'Pre-entrenos', goal:'Energía', flavor:'Lemonade · 400g', price:27500, priceCard:30250, rating:4.7, reviews:62, pop:78, img:IMG+'ena-prewar-lemonade.png'},
-  {id:'ena-crea-1k', name:'Creatina Monohidrato', brand:'ENA', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 300g · 60 serv', price:24000, priceCard:26400, rating:4.9, reviews:120, pop:84, img:IMG+'ena-creatina-1000.png'},
+  {id:'ena-crea-1k', name:'Creatina Monohidrato 1KG', brand:'ENA', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 1kg · 200 ingestas', price:72000, priceCard:79200, rating:4.9, reviews:120, pop:84, img:IMG+'ena-creatina-1000.png'},
   {id:'ena-crea-fp', name:'Creatina Monohidrato', brand:'ENA', cat:'Creatinas', goal:'Fuerza', flavor:'Fruit Punch · 300g', price:24000, priceCard:26400, rating:4.8, reviews:77, pop:70, img:IMG+'ena-creatina-fruitpunch.png'},
   {id:'ena-crea-nar', name:'Creatina Monohidrato', brand:'ENA', cat:'Creatinas', goal:'Fuerza', flavor:'Naranja · 342g', price:24000, priceCard:26400, rating:4.8, reviews:58, pop:68, img:IMG+'ena-creatina-naranja.png'},
   {id:'ena-col', name:'Colágeno Sport', brand:'ENA', cat:'Colágeno', goal:'Recuperación', flavor:'Naranja · 407g', price:28000, priceCard:30800, rating:4.7, reviews:49, pop:62, img:IMG+'ena-colageno-sport.png'},
@@ -58,6 +61,7 @@ var CATALOG = [
   {id:'ena-mag-p', name:'Citrato de Magnesio Polvo', brand:'ENA', cat:'Citrato de Magnesio', goal:'Recuperación', flavor:'Lemonade · 192g', price:16400, priceCard:18100, rating:4.7, reviews:54, pop:64, img:IMG+'ena-magnesio-polvo.png'},
   {id:'ena-multi', name:'Multivitamínico', brand:'ENA', cat:'Vitaminas', goal:'Salud', flavor:'Con cafeína · 60 comp', price:17000, priceCard:18700, rating:4.8, reviews:88, pop:74, img:IMG+'ena-multivitamin.png'},
   {id:'ena-zma', name:'ZMA', brand:'ENA', cat:'Resto de suplementos', goal:'Recuperación', flavor:'Zinc + Magnesio + B6 · 60 caps', price:13000, priceCard:14300, rating:4.7, reviews:43, pop:60, img:IMG+'ena-zma.png'},
+  {id:'ena-omega3', name:'Omega 3 Fish Oil', brand:'ENA', cat:'Vitaminas', goal:'Salud', flavor:'DHA + EPA · 60 cápsulas', price:25000, priceCard:27500, rating:4.8, reviews:58, pop:68, img:IMG+'ena-omega3.jpg'},
   {id:'ena-caf', name:'Cafeína 200', brand:'ENA', cat:'Energía', goal:'Energía', flavor:'200mg · 60 cápsulas', price:11500, priceCard:12700, rating:4.8, reviews:71, pop:76, img:IMG+'ena-cafeina.png'},
 
   /* ===== GOLD NUTRITION ===== */
@@ -604,8 +608,8 @@ function initCartPage(){
     });
     var sub=cartSubtotal();
     qs('#cart-subtotal').textContent=money(sub);
-    qs('#cart-ship').textContent= sub>=60000 ? 'Gratis' : money(4999);
-    qs('#cart-total').textContent= money(sub>=60000 ? sub : sub+ (sub>0?4999:0));
+    qs('#cart-ship').textContent= sub>=160000 ? 'Gratis' : money(4999);
+    qs('#cart-total').textContent= money(sub>=160000 ? sub : sub+ (sub>0?4999:0));
   };
   window.__renderCartPage();
 }
@@ -621,7 +625,7 @@ function initCheckout(){
       row.innerHTML='<div class="th"><img src="'+p.img+'" alt=""></div><div style="flex:1;min-width:0"><div style="font-family:var(--display);font-weight:600;font-size:13px">'+p.name+'</div><div style="font-size:11.5px;color:var(--muted2)">'+i.qty+' × '+money(cardPrice(p))+'</div></div><div style="font-family:var(--display);font-weight:700;font-size:13px">'+money(cardPrice(p)*i.qty)+'</div>';
       box.appendChild(row);
     });
-    var sub=cartSubtotal(), ship=sub>=60000?0:(sub>0?4999:0);
+    var sub=cartSubtotal(), ship=sub>=160000?0:(sub>0?4999:0);
     var active=qs('.pay-opt.active'); var disc=(active&&active.getAttribute('data-discount'))?(sub-cartSubtotalTransfer()):0;
     qs('#co-subtotal').textContent=money(sub);
     var dRow=qs('#co-discount-row'); if(dRow){ dRow.style.display=disc?'':'none'; var dEl=qs('#co-discount'); if(dEl)dEl.textContent='−'+money(disc); }
@@ -659,7 +663,7 @@ function initCheckout(){
         if(btn){ btn.disabled=false; btn.textContent='Pagar con tarjeta'; }
         // Respaldo: si el backend no está disponible, cerrar por WhatsApp
         var orderNo='#MUT-2026-'+Math.floor(1000+Math.random()*9000);
-        var sub=cartSubtotal(), ship=sub>=60000?0:(sub>0?4999:0), total=sub+ship;
+        var sub=cartSubtotal(), ship=sub>=160000?0:(sub>0?4999:0), total=sub+ship;
         var msg='*Nuevo pedido Mutants* '+orderNo+'\n\n';
         cart.forEach(function(i){ var p=byId(i.id); if(p) msg+='• '+i.qty+'x '+p.name+' ('+p.flavor+') — '+money(cardPrice(p)*i.qty)+'\n'; });
         msg+='\nEnvío: '+(ship?money(ship):'Gratis')+'\nPago: Tarjeta\n*Total: '+money(total)+'*';
@@ -671,7 +675,7 @@ function initCheckout(){
 
     // ---- TRANSFERENCIA / EFECTIVO (cierre por WhatsApp) ----
     var orderNo='#MUT-2026-'+Math.floor(1000+Math.random()*9000);
-    var sub=cartSubtotal(), ship=sub>=60000?0:(sub>0?4999:0);
+    var sub=cartSubtotal(), ship=sub>=160000?0:(sub>0?4999:0);
     var disc=(active&&active.getAttribute('data-discount'))?(sub-cartSubtotalTransfer()):0;
     var total=sub-disc+ship;
     var paySel=qs('.pay-opt.active b'); var payName=paySel?paySel.textContent:'A coordinar';

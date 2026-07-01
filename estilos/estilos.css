@@ -138,8 +138,11 @@ h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.04;letter-spacing:
 .cat-card .cnt{font-size:11.5px;color:var(--muted2);margin-top:5px}
 
 /* ---------- Brands marquee ---------- */
-.brands{border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);background:var(--bg2);overflow:hidden;padding:30px 0}
-.brands-label{text-align:center;font-size:12px;letter-spacing:.2em;color:var(--muted2);font-weight:600;margin-bottom:22px}
+.brands{border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);background:var(--bg2);overflow:hidden;padding:clamp(48px,6vw,76px) 0}
+.brands-head{text-align:center;margin-bottom:32px}
+.brands-head .sec-eyebrow{justify-content:center}
+.brands-title{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.6vw,40px);line-height:1.04;margin:10px auto 0;max-width:18ch}
+.brands-sub{color:var(--muted2);font-size:15px;max-width:52ch;margin:14px auto 0}
 .brands-row{display:flex;white-space:nowrap;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .brands-track{display:inline-flex;gap:56px;align-items:center;padding-right:56px;animation:mu-marquee 30s linear infinite}
 .brands-track span{font-family:var(--display);font-weight:700;font-size:23px;color:#5a606b;letter-spacing:.02em;transition:color .2s}
