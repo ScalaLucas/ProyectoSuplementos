@@ -76,17 +76,17 @@ var CATALOG = [
   {id:'gold-omega3', name:'Omega 3 Aceite de Pescado', brand:'Gold Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:25500, priceCard:28100, rating:4.7, reviews:55, pop:66, img:IMG+'gold-omega3.png'},
 
   /* ===== ONE FIT NUTRITION ===== */
-  {id:'onefit-crea', name:'Creatina Micronizada Poweraded 500g', brand:'One Fit Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 500g', price:24000, priceCard:26400, rating:4.7, reviews:62, pop:72, img:IMG+'onefit-creatine.png'},
-  {id:'onefit-whey', name:'Proteína Whey Classic', brand:'One Fit Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate · 907g · 2LB', price:31500, priceCard:34700, rating:4.7, reviews:54, pop:70, img:IMG+'onefit-whey.png'},
-  {id:'onefit-whey-van', name:'Proteína Whey Classic', brand:'One Fit Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Vainilla · 907g · 2LB', price:31500, priceCard:34700, rating:4.7, reviews:48, pop:69, img:IMG+'onefit-whey.png'},
-  {id:'onefit-whey-fru', name:'Proteína Whey Classic', brand:'One Fit Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Frutilla · 907g · 2LB', price:31500, priceCard:34700, rating:4.7, reviews:45, pop:68, img:IMG+'onefit-whey.png'},
-  {id:'onefit-mag', name:'Citrato de Magnesio 450g', brand:'One Fit Nutrition', cat:'Citrato de Magnesio', goal:'Recuperación', flavor:'Sin sabor · 450g', price:17000, priceCard:18700, rating:4.7, reviews:41, pop:60, img:IMG+'onefit-magnesio.png'},
-  {id:'onefit-omega3', name:'Omega 3 Diario', brand:'One Fit Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:18000, priceCard:19800, rating:4.6, reviews:38, pop:58, img:IMG+'onefit-omega3.png'},
-  {id:'onefit-fric', name:'Friction 3.2 Pre-Entreno', brand:'One Fit Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Uva · 300g · 30 serv', price:18000, priceCard:18800, rating:4.7, reviews:47, pop:74, img:IMG+'onefit-friction.png'},
-  {id:'onefit-fric-lim', name:'Friction 3.2 Pre-Entreno', brand:'One Fit Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Limón · 300g · 30 serv', price:18000, priceCard:18800, rating:4.7, reviews:41, pop:73, img:IMG+'onefit-friction-limon.png'},
-  {id:'onefit-multi', name:'Multivitamínico', brand:'One Fit Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:11500, priceCard:12700, rating:4.7, reviews:44, pop:62, img:IMG+'onefit-multivitamins.png'},
-  {id:'onefit-crea-200', name:'Creatina Micronizada Poweraded', brand:'One Fit Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 200g · 40 serv', price:12000, priceCard:13200, rating:4.7, reviews:48, pop:67, img:IMG+'onefit-creatine-200.png'},
-  {id:'onefit-mag-150', name:'Citrato de Magnesio 150g', brand:'One Fit Nutrition', cat:'Citrato de Magnesio', goal:'Recuperación', flavor:'Sin sabor · 150g · 60 serv', price:8000, priceCard:8800, rating:4.7, reviews:36, pop:56, img:IMG+'onefit-magnesio-150.png'},
+  {id:'onefit-crea', name:'Creatina Micronizada Poweraded 500g', brand:'One Fit Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 500g', price:27000, priceCard:29700, rating:4.7, reviews:62, pop:72, img:IMG+'onefit-creatine.png'},
+  {id:'onefit-whey', name:'Proteína Whey Classic', brand:'One Fit Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Chocolate · 907g · 2LB', price:38000, priceCard:41800, rating:4.7, reviews:54, pop:70, img:IMG+'onefit-whey.png'},
+  {id:'onefit-whey-van', name:'Proteína Whey Classic', brand:'One Fit Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Vainilla · 907g · 2LB', price:38000, priceCard:41800, rating:4.7, reviews:48, pop:69, img:IMG+'onefit-whey.png'},
+  {id:'onefit-whey-fru', name:'Proteína Whey Classic', brand:'One Fit Nutrition', cat:'Proteínas', goal:'Volumen', flavor:'Frutilla · 907g · 2LB', price:38000, priceCard:41800, rating:4.7, reviews:45, pop:68, img:IMG+'onefit-whey.png'},
+  {id:'onefit-mag', name:'Citrato de Magnesio 450g', brand:'One Fit Nutrition', cat:'Citrato de Magnesio', goal:'Recuperación', flavor:'Sin sabor · 450g', price:19000, priceCard:20900, rating:4.7, reviews:41, pop:60, img:IMG+'onefit-magnesio.png'},
+  {id:'onefit-omega3', name:'Omega 3 Diario', brand:'One Fit Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:20500, priceCard:22600, rating:4.6, reviews:38, pop:58, img:IMG+'onefit-omega3.png'},
+  {id:'onefit-fric', name:'Friction 3.2 Pre-Entreno', brand:'One Fit Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Uva · 300g · 30 serv', price:19000, priceCard:20900, rating:4.7, reviews:47, pop:74, img:IMG+'onefit-friction.png'},
+  {id:'onefit-fric-lim', name:'Friction 3.2 Pre-Entreno', brand:'One Fit Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Limón · 300g · 30 serv', price:19000, priceCard:20900, rating:4.7, reviews:41, pop:73, img:IMG+'onefit-friction-limon.png'},
+  {id:'onefit-multi', name:'Multivitamínico', brand:'One Fit Nutrition', cat:'Vitaminas', goal:'Salud', flavor:'Caps', price:13500, priceCard:14900, rating:4.7, reviews:44, pop:62, img:IMG+'onefit-multivitamins.png'},
+  {id:'onefit-crea-200', name:'Creatina Micronizada Poweraded', brand:'One Fit Nutrition', cat:'Creatinas', goal:'Fuerza', flavor:'Sin sabor · 200g · 40 serv', price:13500, priceCard:14900, rating:4.7, reviews:48, pop:67, img:IMG+'onefit-creatine-200.png'},
+  {id:'onefit-mag-150', name:'Citrato de Magnesio 150g', brand:'One Fit Nutrition', cat:'Citrato de Magnesio', goal:'Recuperación', flavor:'Sin sabor · 150g · 60 serv', price:9000, priceCard:9900, rating:4.7, reviews:36, pop:56, img:IMG+'onefit-magnesio-150.png'},
 
   /* ===== LEGUILAB ===== */
   {id:'legui-aza', name:'Azafrán + Vitamina B6', brand:'Leguilab', cat:'Vitaminas', goal:'Salud', flavor:'Health & Care · caps', price:25000, priceCard:27500, rating:4.7, reviews:33, badge:'NUEVO', pop:56, img:IMG+'leguilab-azafran.png'},
@@ -159,9 +159,9 @@ var CATALOG = [
   {id:'xt-cutter', name:'Cutter Termogénico Quemador', brand:'Xtrenght', cat:'Quemadores', goal:'Definición', flavor:'120 cápsulas · 60 serv', price:14000, priceCard:15400, rating:4.6, reviews:47, pop:66, img:IMG+'xt-cutter.png'},
 
   /* ===== ONE FIT NUTRITION / LABS NUTRITION — nuevos ===== */
-  {id:'onefit-gainer-van', name:'The Best Gainer Mass', brand:'One Fit Nutrition', cat:'Ganadores de masa', goal:'Volumen', flavor:'Vainilla · 1.5kg', price:28000, priceCard:30800, rating:4.7, reviews:12, badge:'NUEVO', pop:65, img:IMG+'onefit-gainer-mass.png'},
-  {id:'onefit-gainer-fru', name:'The Best Gainer Mass', brand:'One Fit Nutrition', cat:'Ganadores de masa', goal:'Volumen', flavor:'Frutilla · 1.5kg', price:28000, priceCard:30800, rating:4.7, reviews:9, pop:63, img:IMG+'onefit-gainer-mass.png'},
-  {id:'onefit-oxido', name:'Óxido Nítrico 5.1', brand:'One Fit Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Limón · 210g · 30 serv', price:15900, priceCard:17500, rating:4.7, reviews:8, badge:'NUEVO', pop:62, img:IMG+'onefit-oxido-nitrico-limon.png'},
+  {id:'onefit-gainer-van', name:'The Best Gainer Mass', brand:'One Fit Nutrition', cat:'Ganadores de masa', goal:'Volumen', flavor:'Vainilla · 1.5kg', price:34000, priceCard:37400, rating:4.7, reviews:12, badge:'NUEVO', pop:65, img:IMG+'onefit-gainer-mass.png'},
+  {id:'onefit-gainer-fru', name:'The Best Gainer Mass', brand:'One Fit Nutrition', cat:'Ganadores de masa', goal:'Volumen', flavor:'Frutilla · 1.5kg', price:34000, priceCard:37400, rating:4.7, reviews:9, pop:63, img:IMG+'onefit-gainer-mass.png'},
+  {id:'onefit-oxido', name:'Óxido Nítrico 5.1', brand:'One Fit Nutrition', cat:'Pre-entrenos', goal:'Energía', flavor:'Limón · 210g · 30 serv', price:18000, priceCard:19800, rating:4.7, reviews:8, badge:'NUEVO', pop:62, img:IMG+'onefit-oxido-nitrico-limon.png'},
   {id:'labs-nac', name:'NAC', brand:'Labs Nutrition', cat:'Salud y Bienestar', goal:'Salud', flavor:'N-Acetilcisteína · 60 cápsulas', price:20000, priceCard:22000, rating:4.7, reviews:6, badge:'NUEVO', pop:58, img:IMG+'labs-nac.png'}
 ];
 window.MUTANTS_CATALOG = CATALOG;
