@@ -167,12 +167,20 @@ if (count($items) === 0) {
   exit;
 }
 
-// --- Costo de envío (igual que en el sitio: gratis desde $160.000) ---
+// --- Costo de envío por zona (Buenos Aires) — el precio recibido se valida contra esta lista ---
+$ZONAS_VALIDAS = [4500, 5000, 5500, 6000, 6500, 7500, 8500];
+$shipPrice = isset($body['shipPrice']) ? (int)$body['shipPrice'] : null;
+
 $subtotal = 0;
 foreach ($items as $it) { $subtotal += $it['unit_price'] * $it['quantity']; }
 if (!$pickup && $subtotal < 160000) {
+  if ($shipPrice === null || !in_array($shipPrice, $ZONAS_VALIDAS, true)) {
+    http_response_code(400);
+    echo json_encode(['error' => 'Zona de envío inválida']);
+    exit;
+  }
   $items[] = [
-    'title' => 'Envío', 'quantity' => 1, 'unit_price' => 4999.0, 'currency_id' => 'ARS',
+    'title' => 'Envío', 'quantity' => 1, 'unit_price' => (float)$shipPrice, 'currency_id' => 'ARS',
   ];
 }
 

@@ -63,7 +63,30 @@
           <div class="field-row"><div class="field"><label>Provincia</label>
             <select required><option value="">Seleccionar…</option><option>Buenos Aires</option><option>CABA</option><option>Córdoba</option><option>Santa Fe</option><option>Mendoza</option><option>Otra</option></select></div>
             <div class="field"><label>Método de envío</label>
-            <select id="ship-method" required><option>Estándar (24–48hs)</option><option>Express (24hs)</option><option>Retiro en local</option></select></div>
+            <select id="ship-method" required><option value="domicilio">Envío a domicilio</option><option value="retiro">Retiro en local</option></select></div>
+          </div>
+          <div class="field" id="ship-zone-wrap">
+            <label>Zona de envío</label>
+            <select id="ship-zone" required>
+              <option value="">Seleccioná tu localidad…</option>
+              <optgroup label="Capital">
+                <option value="4500">CABA — $4.500</option>
+              </optgroup>
+              <optgroup label="Zona Oeste">
+                <option value="4500">Morón / Ituzaingó / Hurlingham / Tres de Febrero / La Matanza (Haedo, Lomas del Mirador, Ramos Mejía) — $4.500</option>
+                <option value="5500">La Matanza (Bonzi, Tapiales, San Justo, Tablada, Casanova, Ciudad Evita) — $5.500</option>
+                <option value="6000">Merlo / William Morris / Moreno / Laferrere / Catán / Virrey del Pino — $6.000</option>
+              </optgroup>
+              <optgroup label="Zona Norte">
+                <option value="5000">Caseros / San Martín / San Miguel / Vicente López — $5.000</option>
+                <option value="6500">San Isidro / San Fernando / Tigre / Malvinas Argentinas / Los Polvorines / José C. Paz — $6.500</option>
+              </optgroup>
+              <optgroup label="Zona Sur">
+                <option value="6500">Lanús / Lomas de Zamora / Avellaneda — $6.500</option>
+                <option value="7500">Quilmes / Almirante Brown / Esteban Echeverría / Monte Grande / Ezeiza / Florencio Varela — $7.500</option>
+                <option value="8500">Escobar / Pilar / Del Viso / Maschwitz / Berazategui / La Plata / Campana / Luján / Gral. Rodríguez — $8.500</option>
+              </optgroup>
+            </select>
           </div>
         </div>
         <div class="panel">

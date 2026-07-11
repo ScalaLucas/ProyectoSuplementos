@@ -236,7 +236,7 @@ function productCard(p){
   c.innerHTML =
     '<div class="prod-media">'+
       '<a href="producto.html?id='+p.id+'" style="position:absolute;inset:0;z-index:1"></a>'+
-      '<img src="'+p.img+'" alt="'+p.name+'">'+
+      '<img src="'+p.img+'" alt="'+p.name+'" loading="lazy" decoding="async">'+
       (p.badge?'<span class="badge">'+p.badge+'</span>':'')+
       (p.disc?'<span class="disc">-'+p.disc+'%</span>':'')+
     '</div>'+
@@ -617,8 +617,8 @@ function initCartPage(){
     });
     var sub=cartSubtotal();
     qs('#cart-subtotal').textContent=money(sub);
-    qs('#cart-ship').textContent= sub>=160000 ? 'Gratis' : money(4999);
-    qs('#cart-total').textContent= money(sub>=160000 ? sub : sub+ (sub>0?4999:0));
+    qs('#cart-ship').textContent= sub>=160000 ? 'Gratis' : 'Se calcula en el checkout';
+    qs('#cart-total').textContent= money(sub);
   };
   window.__renderCartPage();
 }
@@ -634,15 +634,29 @@ function initCheckout(){
       row.innerHTML='<div class="th"><img src="'+p.img+'" alt=""></div><div style="flex:1;min-width:0"><div style="font-family:var(--display);font-weight:600;font-size:13px">'+p.name+'</div><div style="font-size:11.5px;color:var(--muted2)">'+i.qty+' × '+money(cardPrice(p))+'</div></div><div style="font-family:var(--display);font-weight:700;font-size:13px">'+money(cardPrice(p)*i.qty)+'</div>';
       box.appendChild(row);
     });
-    var sub=cartSubtotal(), ship=isPickup()?0:(sub>=160000?0:(sub>0?4999:0));
+    var sub=cartSubtotal(), ship=shipCost(sub);
     var active=qs('.pay-opt.active'); var disc=(active&&active.getAttribute('data-discount'))?(sub-cartSubtotalTransfer()):0;
     qs('#co-subtotal').textContent=money(sub);
     var dRow=qs('#co-discount-row'); if(dRow){ dRow.style.display=disc?'':'none'; var dEl=qs('#co-discount'); if(dEl)dEl.textContent='−'+money(disc); }
-    qs('#co-ship').textContent=ship?money(ship):(isPickup()?'Retiro en local':'Gratis');
-    qs('#co-total').textContent=money(sub-disc+ship);
+    qs('#co-ship').textContent = isPickup() ? 'Retiro en local' : (sub>=160000 ? 'Gratis' : (ship===null ? 'Seleccioná tu zona' : money(ship)));
+    qs('#co-total').textContent=money(sub-disc+(ship||0));
   };
-  function isPickup(){ var sel=qs('#ship-method'); return sel && sel.value==='Retiro en local'; }
-  var shipSel=qs('#ship-method'); if(shipSel) shipSel.addEventListener('change', window.__renderCheckout);
+  function isPickup(){ var sel=qs('#ship-method'); return sel && sel.value==='retiro'; }
+  function shipCost(sub){
+    if(isPickup()) return 0;
+    if(sub>=160000) return 0;
+    var zoneSel=qs('#ship-zone');
+    if(!zoneSel || !zoneSel.value) return null;
+    return parseInt(zoneSel.value,10)||0;
+  }
+  function toggleZoneField(){
+    var wrap=qs('#ship-zone-wrap'); if(!wrap) return;
+    wrap.style.display = isPickup() ? 'none' : '';
+    var zoneSel=qs('#ship-zone'); if(zoneSel) zoneSel.required = !isPickup();
+  }
+  var shipSel=qs('#ship-method'); if(shipSel) shipSel.addEventListener('change', function(){ toggleZoneField(); window.__renderCheckout(); });
+  var zoneSel=qs('#ship-zone'); if(zoneSel) zoneSel.addEventListener('change', window.__renderCheckout);
+  toggleZoneField();
   window.__renderCheckout();
   function syncPayButton(){
     var btn=qs('#checkout-form button[type=submit]'); if(!btn) return;
@@ -657,6 +671,7 @@ function initCheckout(){
   if(form){ form.addEventListener('submit',function(e){ e.preventDefault();
     var cart=loadCart();
     if(!cart.length){ toast('Tu carrito está vacío'); return; }
+    if(!isPickup() && cartSubtotal()<160000 && shipCost(cartSubtotal())===null){ toast('Seleccioná tu zona de envío'); return; }
     var active=qs('.pay-opt.active');
     var isOnline = active && active.getAttribute('data-online');
 
@@ -666,7 +681,7 @@ function initCheckout(){
       if(btn){ btn.disabled=true; btn.textContent='Redirigiendo a Mercado Pago…'; }
       fetch('api/crear-preferencia.php', {
         method:'POST', headers:{'Content-Type':'application/json'},
-        body: JSON.stringify({ cart: cart, pickup: isPickup() })
+        body: JSON.stringify({ cart: cart, pickup: isPickup(), shipPrice: shipCost(cartSubtotal()) })
       }).then(function(r){ return r.json(); }).then(function(d){
         if(d && d.init_point){ window.location.href = d.init_point; }
         else { throw new Error((d && d.error) || 'Error'); }
@@ -674,7 +689,7 @@ function initCheckout(){
         if(btn){ btn.disabled=false; btn.textContent='Pagar con tarjeta'; }
         // Respaldo: si el backend no está disponible, cerrar por WhatsApp
         var orderNo='#MUT-2026-'+Math.floor(1000+Math.random()*9000);
-        var sub=cartSubtotal(), ship=isPickup()?0:(sub>=160000?0:(sub>0?4999:0)), total=sub+ship;
+        var sub=cartSubtotal(), ship=shipCost(sub)||0, total=sub+ship;
         var msg='*Nuevo pedido Mutants* '+orderNo+'\n\n';
         cart.forEach(function(i){ var p=byId(i.id); if(p) msg+='• '+i.qty+'x '+p.name+' ('+p.flavor+') — '+money(cardPrice(p)*i.qty)+'\n'; });
         msg+='\nEnvío: '+(ship?money(ship):'Gratis')+'\nPago: Tarjeta\n*Total: '+money(total)+'*';
@@ -686,7 +701,7 @@ function initCheckout(){
 
     // ---- TRANSFERENCIA / EFECTIVO (cierre por WhatsApp) ----
     var orderNo='#MUT-2026-'+Math.floor(1000+Math.random()*9000);
-    var sub=cartSubtotal(), ship=isPickup()?0:(sub>=160000?0:(sub>0?4999:0));
+    var sub=cartSubtotal(), ship=shipCost(sub)||0;
     var disc=(active&&active.getAttribute('data-discount'))?(sub-cartSubtotalTransfer()):0;
     var total=sub-disc+ship;
     var paySel=qs('.pay-opt.active b'); var payName=paySel?paySel.textContent:'A coordinar';
